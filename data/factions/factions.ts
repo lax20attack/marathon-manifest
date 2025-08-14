@@ -15,6 +15,7 @@ const FACTION_THEME: Record<FactionType, FactionTheme> = {
 export const FACTIONS: Faction[] = [
   {
     name: FactionType.Cyberacme,
+    slug: 'cyberacme',
     description:
       'Cyberacme is a leading technology company specializing in advanced cybernetics and artificial intelligence. They are known for their cutting-edge products and innovative solutions.',
     theme: FACTION_THEME.Cyberacme,
@@ -25,6 +26,7 @@ export const FACTIONS: Faction[] = [
   },
   {
     name: FactionType.Nucaloric,
+    slug: 'nucaloric',
     description:
       'Nucaloric is a global leader in energy production and distribution, focusing on sustainable and renewable energy sources. They are committed to reducing carbon emissions and promoting environmental sustainability.',
     theme: FACTION_THEME.Nucaloric,
@@ -35,6 +37,7 @@ export const FACTIONS: Faction[] = [
   },
   {
     name: FactionType.Traxus,
+    slug: 'traxus',
     description:
       'Traxus is a multinational corporation specializing in transportation and logistics. They are known for their advanced supply chain solutions and innovative transportation technologies.',
     theme: FACTION_THEME.Traxus,
@@ -45,6 +48,7 @@ export const FACTIONS: Faction[] = [
   },
   {
     name: FactionType.Mida,
+    slug: 'mida',
     description:
       'Mida is a leading financial services company specializing in investment banking and asset management. They are known for their expertise in financial markets and innovative investment strategies.',
     theme: FACTION_THEME.Mida,
@@ -55,6 +59,7 @@ export const FACTIONS: Faction[] = [
   },
   {
     name: FactionType.Arachne,
+    slug: 'arachne',
     description:
       'Arachne is a global leader in cybersecurity and information security solutions. They are known for their advanced threat detection and prevention technologies.',
     theme: FACTION_THEME.Arachne,
@@ -65,6 +70,7 @@ export const FACTIONS: Faction[] = [
   },
   {
     name: FactionType.Sekiguchi,
+    slug: 'sekiguchi',
     description:
       'Sekiguchi is a multinational corporation specializing in manufacturing and engineering. They are known for their advanced production technologies and innovative engineering solutions.',
     theme: FACTION_THEME.Sekiguchi,

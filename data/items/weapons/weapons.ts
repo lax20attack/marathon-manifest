@@ -1,6 +1,7 @@
 import { ItemType } from '../items.interface';
 import { AmmoType, Weapon, WeaponStats, WeaponType } from './weapons.interface';
 
+// Use a dummy weapon stat while we gather the real data. This will be removed once we have the actual stats.
 const DUMMY_WEAPON_STAT: WeaponStats = {
   firePower: -7.77,
   damage: -7.77,
@@ -41,6 +42,7 @@ export const WEAPONS: Weapon[] = [
     stats: {
       ...DUMMY_WEAPON_STAT,
       firePower: 6.4,
+      precision: 1.2,
       damage: 11.5,
       rateOfFire: 720,
       accuracy: 28,

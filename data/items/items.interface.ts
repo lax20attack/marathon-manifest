@@ -1,16 +1,37 @@
 import { Map, MapPOI } from '../maps/maps.interface';
 
 export interface Item {
+  // Unique identifier for the item
   id: number;
+
+  // Unique slug for the item, used in URLs
   slug: string;
+
+  // Type of the item, e.g., Material, Weapon, Consumable
   type: ItemType;
+
+  // Display name of the item
   name: string;
+
+  // Description of the item
   description: string;
+
+  // URL of the item, relative to the root of the manifest directory
   imageUrl: string;
+
+  // Optional rarity of the item. Weapons don't have a rarity, but other items do.
   rarity?: ItemRarity;
+
+  // Sources from which the item can be obtained. e.g., map objectives, POIs
   sources: ItemSource[];
+
+  // Usages of the item, e.g., for upgrades or vendor unlocks
   usages: ItemUsageType[];
+
+  // Containers where the item can be found. e.g., Arms Locker, Bioprinter
   containers: ItemContainer[];
+
+  // How many credits the item costs
   credits?: number;
 }
 
