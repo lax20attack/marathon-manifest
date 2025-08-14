@@ -1,0 +1,12 @@
+{
+  "arrowParens": "always",
+  "printWidth": 140,
+  "singleQuote": true,
+  "plugins": [
+    "prettier-plugin-tailwindcss",
+    "prettier-plugin-multiline-arrays"
+  ],
+  "multilineArraysWrapThreshold": 2,
+  "tabWidth": 2,
+  "trailingComma": "all"
+}

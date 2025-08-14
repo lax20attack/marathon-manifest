@@ -1,0 +1,885 @@
+import { MAPS } from '../../maps/maps';
+import { Item, ItemContainerType, ItemRarity, ItemSourceMapObjective, ItemSourceType, ItemType, ItemUsageType } from '../items.interface';
+
+export const MATERIALS: Item[] = [
+  {
+    id: 1000,
+    slug: 'micro-processor',
+    type: ItemType.Material,
+    rarity: ItemRarity.Enhanced,
+    name: 'Micro Processor',
+    description: 'Grants a temporary but significant boost to computing power.',
+    imageUrl: 'assets/items/materials/processor.png',
+    usages: [ItemUsageType.CyberAcmeUpgrades, ItemUsageType.NuCaloricVendorUnlocks],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.perimeter,
+        pois: [MAPS.perimeter.pois.northRelay, MAPS.perimeter.pois.southRelay],
+      },
+    ],
+    containers: [{ type: ItemContainerType.CoreStorage }],
+    credits: 10,
+  },
+  {
+    id: 1001,
+    slug: 'synthetic-rubber',
+    type: ItemType.Material,
+    rarity: ItemRarity.Deluxe,
+    name: 'Synthetic Rubber',
+    description: 'Constantly devulcanized, recycled, and reused in an exoplanet colony.',
+    imageUrl: 'assets/items/materials/rubber.png',
+    usages: [ItemUsageType.CyberAcmeUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.perimeter,
+        pois: [MAPS.perimeter.pois.station, MAPS.perimeter.pois.overflow],
+      },
+    ],
+    containers: [{ type: ItemContainerType.ArmsLocker }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    credits: 50,
+  },
+  {
+    id: 1002,
+    slug: 'aluminum-rods',
+    type: ItemType.Material,
+    rarity: ItemRarity.Enhanced,
+    name: 'Aluminum Rods',
+    description: 'Lightweight, reliable, and easily recycled.',
+    imageUrl: 'assets/items/materials/rods.png',
+    usages: [ItemUsageType.CyberAcmeUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.perimeter,
+        pois: [MAPS.perimeter.pois.station, MAPS.perimeter.pois.hauler],
+      },
+    ],
+    containers: [{ type: ItemContainerType.ArmsLocker }],
+    credits: 10,
+  },
+  {
+    id: 1003,
+    slug: 'flex-processor',
+    type: ItemType.Material,
+    rarity: ItemRarity.Superior,
+    name: 'Flex Processor',
+    description: 'A flexible processor used in advanced crafting recipes.',
+    imageUrl: 'assets/items/materials/processor.png',
+    usages: [ItemUsageType.CyberAcmeUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapObjective,
+        mapObjective: ItemSourceMapObjective.UESCIncursion,
+      },
+    ],
+    containers: [
+      { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
+    ],
+    credits: null,
+  },
+  {
+    id: 1004,
+    slug: 'lab-xerogel',
+    type: ItemType.Material,
+    rarity: ItemRarity.Deluxe,
+    name: 'Lab Xerogel',
+    description: 'A gel-like substance used in advanced crafting recipes.',
+    imageUrl: 'assets/items/materials/xerogel.png',
+    usages: [ItemUsageType.CyberAcmeUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.direMarsh,
+        pois: [MAPS.direMarsh.pois.quarantine, MAPS.direMarsh.pois.greenhouse],
+      },
+    ],
+    containers: [{ type: ItemContainerType.ToolCart }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    credits: 50,
+  },
+  {
+    id: 1005,
+    slug: 'spark-leaf',
+    type: ItemType.Material,
+    rarity: ItemRarity.Enhanced,
+    name: 'Spark Leaf',
+    description: 'High in silica content, making this plant a valuable resource on Tau Ceti IV.',
+    imageUrl: 'assets/items/materials/leaf.png',
+    usages: [ItemUsageType.CyberAcmeUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.direMarsh,
+        pois: [MAPS.direMarsh.pois.aiUplink, MAPS.direMarsh.pois.greenhouse],
+      },
+    ],
+    containers: [
+      {
+        type: ItemContainerType.GrassyAreas,
+      },
+    ],
+    credits: 10,
+  },
+  {
+    id: 1006,
+    slug: 'expanded-processor',
+    type: ItemType.Material,
+    rarity: ItemRarity.Deluxe,
+    name: 'Expanded Processor',
+    description: 'This versatile processor can be permanently attached to any compatible hardware.',
+    imageUrl: 'assets/items/materials/processor.png',
+    usages: [ItemUsageType.CyberAcmeUpgrades, ItemUsageType.NuCaloricUpgrades],
+    sources: [
+      { type: ItemSourceType.MapPoi, map: MAPS.perimeter, pois: [MAPS.perimeter.pois.northRelay, MAPS.perimeter.pois.southRelay] },
+    ],
+    containers: [{ type: ItemContainerType.CoreStorage }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    credits: 50,
+  },
+  {
+    id: 1007,
+    slug: 'steel-rods',
+    type: ItemType.Material,
+    rarity: ItemRarity.Deluxe,
+    name: 'Steel Rods',
+    description: 'Durable rods used in various crafting recipes.',
+    imageUrl: 'assets/items/materials/rods.png',
+    usages: [ItemUsageType.CyberAcmeUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.perimeter,
+        pois: [MAPS.perimeter.pois.hauler, MAPS.perimeter.pois.station],
+      },
+    ],
+    containers: [
+      {
+        type: ItemContainerType.ArmsLocker,
+      },
+    ],
+    credits: 50,
+  },
+  {
+    id: 1008,
+    slug: 'symbiote-rubber',
+    type: ItemType.Material,
+    rarity: ItemRarity.Superior,
+    name: 'Symbiote Rubber',
+    description: 'A flexible and durable material used in various crafting recipes.',
+    imageUrl: 'assets/items/materials/rubber.png',
+    usages: [ItemUsageType.CyberAcmeUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapObjective,
+        mapObjective: ItemSourceMapObjective.UESCIncursion,
+      },
+    ],
+    containers: [
+      { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
+    ],
+    credits: null,
+  },
+  {
+    id: 1009,
+    slug: 'combat-xerogel',
+    type: ItemType.Material,
+    rarity: ItemRarity.Superior,
+    name: 'Combat Xerogel',
+    description: 'A rare gel used in various crafting recipes.',
+    imageUrl: 'assets/items/materials/xerogel.png',
+    usages: [ItemUsageType.CyberAcmeUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapObjective,
+        mapObjective: ItemSourceMapObjective.UESCIncursion,
+      },
+    ],
+    containers: [
+      { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
+    ],
+    credits: null,
+  },
+  {
+    id: 1010,
+    slug: 'hydrocarbon-rubber',
+    type: ItemType.Material,
+    rarity: ItemRarity.Enhanced,
+    name: 'Hydrocarbon Rubber',
+    description: 'Easily harvested from plant tissue, but prone to decomposition on Tau Ceti IV.',
+    imageUrl: 'assets/items/materials/rubber.png',
+    usages: [
+      ItemUsageType.CyberAcmeUpgrades,
+      ItemUsageType.NuCaloricVendorUnlocks,
+      ItemUsageType.TraxusVendorUnlocks,
+    ],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.perimeter,
+        pois: [MAPS.perimeter.pois.station, MAPS.perimeter.pois.overflow],
+      },
+    ],
+    containers: [
+      {
+        type: ItemContainerType.ArmsLocker,
+      },
+    ],
+    credits: 10,
+  },
+  {
+    id: 1011,
+    slug: 'shell-id',
+    type: ItemType.Material,
+    rarity: ItemRarity.Superior,
+    name: 'Shell ID',
+    description: 'A unique identifier for a shell item.',
+    imageUrl: 'assets/items/materials/shell-id.jpg',
+    usages: [ItemUsageType.CyberAcmeUpgrades],
+    sources: [
+      { type: ItemSourceType.MapObjective, mapObjective: ItemSourceMapObjective.HighValueTarget },
+      { type: ItemSourceType.MapObjective, mapObjective: ItemSourceMapObjective.SupplyDrop },
+    ],
+    containers: [],
+    credits: null,
+  },
+  {
+    id: 1012,
+    slug: 'storage-drive',
+    type: ItemType.Material,
+    rarity: ItemRarity.Enhanced,
+    name: 'Storage Drive',
+    description: 'A potential treasure trove of colony-era data.',
+    imageUrl: 'assets/items/materials/drive.png',
+    usages: [
+      ItemUsageType.NuCaloricUpgrades,
+      ItemUsageType.NuCaloricVendorUnlocks,
+      ItemUsageType.TraxusVendorUnlocks,
+    ],
+    sources: [
+      { type: ItemSourceType.MapPoi, map: MAPS.direMarsh, pois: [MAPS.direMarsh.pois.algaePonds, MAPS.direMarsh.pois.aiUplink] },
+    ],
+    containers: [
+      {
+        type: ItemContainerType.CoreStorage,
+      },
+    ],
+    credits: 10,
+  },
+  {
+    id: 1013,
+    slug: 'organic-lens',
+    type: ItemType.Material,
+    rarity: ItemRarity.Enhanced,
+    name: 'Organic Lens',
+    description: 'Mass-produced for military, scientific, and communicational devices.',
+    imageUrl: 'assets/items/materials/lens.png',
+    usages: [ItemUsageType.NuCaloricUpgrades, ItemUsageType.CyberAcmeUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.direMarsh,
+        pois: [MAPS.direMarsh.pois.bioResearch, MAPS.direMarsh.pois.quarantine],
+      },
+    ],
+    containers: [
+      {
+        type: ItemContainerType.Bioprinter,
+      },
+      {
+        type: ItemContainerType.GrassyAreas,
+      },
+    ],
+    credits: 10,
+  },
+  {
+    id: 1014,
+    slug: 'encrypted-drive',
+    type: ItemType.Material,
+    rarity: ItemRarity.Deluxe,
+    name: 'Encrypted Drive',
+    description: 'A',
+    imageUrl: 'assets/items/materials/drive.png',
+    usages: [
+      ItemUsageType.NuCaloricUpgrades,
+      ItemUsageType.NuCaloricVendorUnlocks,
+      ItemUsageType.TraxusVendorUnlocks,
+    ],
+    sources: [
+      { type: ItemSourceType.MapPoi, map: MAPS.direMarsh, pois: [MAPS.direMarsh.pois.algaePonds, MAPS.direMarsh.pois.aiUplink] },
+    ],
+    containers: [{ type: ItemContainerType.CoreStorage }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    credits: 50,
+  },
+  {
+    id: 1015,
+    slug: 'chitin-sample',
+    type: ItemType.Material,
+    rarity: ItemRarity.Deluxe,
+    name: 'Chitin Sample',
+    description: 'A',
+    imageUrl: 'assets/items/materials/chitin-sample.jpg',
+    usages: [ItemUsageType.NuCaloricUpgrades],
+    sources: [],
+    containers: [
+      {
+        type: ItemContainerType.TickNest,
+      },
+    ],
+    credits: 50,
+  },
+  {
+    id: 1016,
+    slug: 'coherence-drive',
+    type: ItemType.Material,
+    rarity: ItemRarity.Superior,
+    name: 'Coherence Drive',
+    description: 'A',
+    imageUrl: 'assets/items/materials/drive.png',
+    usages: [ItemUsageType.NuCaloricUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapObjective,
+        mapObjective: ItemSourceMapObjective.UESCIncursion,
+      },
+    ],
+    containers: [
+      { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
+    ],
+    credits: null,
+  },
+  {
+    id: 1017,
+    slug: 'conductive-filament',
+    type: ItemType.Material,
+    rarity: ItemRarity.Deluxe,
+    name: 'Conductive Filament',
+    description: 'Once proprietary to the UESC, now scavenged by everyone on Tau Ceti IV.',
+    imageUrl: 'assets/items/materials/filament.png',
+    usages: [
+      ItemUsageType.NuCaloricUpgrades,
+      ItemUsageType.TraxusUpgrades,
+      ItemUsageType.NuCaloricVendorUnlocks,
+      ItemUsageType.NuCaloricUpgrades,
+    ],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.perimeter,
+        pois: [MAPS.perimeter.pois.northRelay, MAPS.perimeter.pois.overflow],
+      },
+    ],
+    containers: [{ type: ItemContainerType.Bioprinter }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    credits: 50,
+  },
+  {
+    id: 1018,
+    slug: 'tarax-seed',
+    type: ItemType.Material,
+    rarity: ItemRarity.Deluxe,
+    name: 'Tarax Seed',
+    description: 'Mildly toxic when eaten, but pharmaceuticals can be extracted from the seeds.',
+    imageUrl: 'assets/items/materials/leaf.png',
+    usages: [
+      ItemUsageType.NuCaloricUpgrades,
+      ItemUsageType.TraxusUpgrades,
+      ItemUsageType.NuCaloricVendorUnlocks,
+      ItemUsageType.NuCaloricUpgrades,
+    ],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.direMarsh,
+        pois: [MAPS.direMarsh.pois.aiUplink, MAPS.direMarsh.pois.greenhouse],
+      },
+    ],
+    containers: [{ type: ItemContainerType.GrassyAreas }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    credits: 50,
+  },
+  {
+    id: 1019,
+    slug: 'anomalous-plasma',
+    type: ItemType.Material,
+    rarity: ItemRarity.Prestige,
+    name: 'Anomalous Plasma',
+    description: 'A',
+    imageUrl: 'assets/items/materials/anomalous-plasma.jpg',
+    usages: [ItemUsageType.NuCaloricUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapObjective,
+        mapObjective: ItemSourceMapObjective.UESCIncursion,
+      },
+      {
+        type: ItemSourceType.MapObjective,
+        mapObjective: ItemSourceMapObjective.UESCIntercept,
+      },
+    ],
+    containers: [
+      { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Prestige },
+    ],
+    credits: null,
+  },
+  {
+    id: 1020,
+    slug: 'biofilament',
+    type: ItemType.Material,
+    rarity: ItemRarity.Superior,
+    name: 'Biofilament',
+    description: 'A',
+    imageUrl: 'assets/items/materials/biofilament.jpg',
+    usages: [ItemUsageType.NuCaloricUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapObjective,
+        mapObjective: ItemSourceMapObjective.UESCIncursion,
+      },
+    ],
+    containers: [
+      { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
+    ],
+    credits: null,
+  },
+  {
+    id: 1021,
+    slug: 'plastic-filament',
+    type: ItemType.Material,
+    rarity: ItemRarity.Enhanced,
+    name: 'Plastic Filament',
+    description: 'A',
+    imageUrl: 'assets/items/materials/filament.png',
+    usages: [
+      ItemUsageType.NuCaloricUpgrades,
+      ItemUsageType.NuCaloricVendorUnlocks,
+      ItemUsageType.TraxusVendorUnlocks,
+    ],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.perimeter,
+        pois: [MAPS.perimeter.pois.northRelay, MAPS.perimeter.pois.overflow],
+      },
+    ],
+    containers: [
+      {
+        type: ItemContainerType.Bioprinter,
+      },
+    ],
+    credits: 10,
+  },
+  {
+    id: 1022,
+    slug: 'fungal-growth',
+    type: ItemType.Material,
+    rarity: ItemRarity.Deluxe,
+    name: 'Fungal Growth',
+    description: 'A',
+    imageUrl: 'assets/items/materials/fungal-growth.jpg',
+    usages: [ItemUsageType.NuCaloricUpgrades, ItemUsageType.TraxusUpgrades],
+    sources: [],
+    containers: [],
+    credits: 50,
+  },
+  {
+    id: 1023,
+    slug: 'carbon-wire',
+    type: ItemType.Material,
+    rarity: ItemRarity.Enhanced,
+    name: 'Carbon Wire',
+    description: 'A',
+    imageUrl: 'assets/items/materials/carbon-wire.jpg',
+    usages: [ItemUsageType.TraxusUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.perimeter,
+        pois: [MAPS.perimeter.pois.hauler, MAPS.perimeter.pois.southRelay],
+      },
+    ],
+    containers: [
+      {
+        type: ItemContainerType.MunitionsCrate,
+      },
+    ],
+    credits: null,
+  },
+  {
+    id: 1024,
+    slug: 'basic-xerogel',
+    type: ItemType.Material,
+    rarity: ItemRarity.Enhanced,
+    name: 'Basic Xerogel',
+    description: 'Multipurpose construction material, perfect for space colonies.',
+    imageUrl: 'assets/items/materials/xerogel.png',
+    usages: [
+      ItemUsageType.TraxusUpgrades,
+      ItemUsageType.NuCaloricVendorUnlocks,
+      ItemUsageType.TraxusVendorUnlocks,
+    ],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.direMarsh,
+        pois: [MAPS.direMarsh.pois.quarantine, MAPS.direMarsh.pois.greenhouse],
+      },
+    ],
+    containers: [
+      {
+        type: ItemContainerType.ToolCart,
+      },
+    ],
+    credits: 10,
+  },
+  {
+    id: 1025,
+    slug: 'gel-explosive',
+    type: ItemType.Material,
+    rarity: ItemRarity.Deluxe,
+    name: 'Gel Explosive',
+    description: 'A',
+    imageUrl: 'assets/items/materials/explosive.png',
+    usages: [ItemUsageType.TraxusUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.direMarsh,
+        pois: [MAPS.direMarsh.pois.complex, MAPS.direMarsh.pois.fieldMaintenance],
+      },
+    ],
+    containers: [{ type: ItemContainerType.MunitionsCrate }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    credits: 50,
+  },
+  {
+    id: 1026,
+    slug: 'dynamic-lens',
+    type: ItemType.Material,
+    rarity: ItemRarity.Deluxe,
+    name: 'Dynamic Lens',
+    description: 'Uses multiple images to gather visual data.',
+    imageUrl: 'assets/items/materials/lens.png',
+    usages: [
+      ItemUsageType.NuCaloricUpgrades,
+      ItemUsageType.TraxusUpgrades,
+      ItemUsageType.NuCaloricVendorUnlocks,
+      ItemUsageType.TraxusVendorUnlocks,
+    ],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.direMarsh,
+        pois: [MAPS.direMarsh.pois.bioResearch, MAPS.direMarsh.pois.quarantine],
+      },
+    ],
+    containers: [{ type: ItemContainerType.Bioprinter }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    credits: 50,
+  },
+  {
+    id: 1027,
+    slug: 'polymer-wire',
+    type: ItemType.Material,
+    rarity: ItemRarity.Deluxe,
+    name: 'Polymer Wire',
+    description: 'Organic polymers "grown" for conductivity, and a frequent target of scavengers.',
+    imageUrl: 'assets/items/materials/rubber.png',
+    usages: [
+      ItemUsageType.TraxusUpgrades,
+      ItemUsageType.NuCaloricVendorUnlocks,
+      ItemUsageType.TraxusVendorUnlocks,
+    ],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.perimeter,
+        pois: [MAPS.perimeter.pois.hauler, MAPS.perimeter.pois.southRelay],
+      },
+    ],
+    containers: [
+      {
+        type: ItemContainerType.MunitionsCrate,
+      },
+      {
+        type: ItemContainerType.LockedRooms,
+        rarity: ItemRarity.Deluxe,
+      },
+    ],
+    credits: 50,
+  },
+  {
+    id: 1028,
+    slug: 'putty-explosive',
+    type: ItemType.Material,
+    rarity: ItemRarity.Enhanced,
+    name: 'Putty Explosive',
+    description: `Soft, moldable, and stable. Sometimes it's best to stick with the classics.`,
+    imageUrl: 'assets/items/materials/explosive.png',
+    usages: [
+      ItemUsageType.TraxusUpgrades,
+      ItemUsageType.NuCaloricVendorUnlocks,
+      ItemUsageType.TraxusVendorUnlocks,
+    ],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.direMarsh,
+        pois: [MAPS.direMarsh.pois.complex, MAPS.direMarsh.pois.fieldMaintenance],
+      },
+    ],
+    containers: [
+      {
+        type: ItemContainerType.MunitionsCrate,
+      },
+    ],
+    credits: 10,
+  },
+  {
+    id: 1029,
+    slug: 'liquid-explosive',
+    type: ItemType.Material,
+    rarity: ItemRarity.Superior,
+    name: 'Liquid Explosive',
+    description: 'A',
+    imageUrl: 'assets/items/materials/explosive.png',
+    usages: [ItemUsageType.TraxusUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapObjective,
+        mapObjective: ItemSourceMapObjective.UESCIncursion,
+      },
+    ],
+    containers: [
+      { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
+    ],
+    credits: null,
+  },
+  {
+    id: 1030,
+    slug: 'papaver-bloom',
+    type: ItemType.Material,
+    rarity: ItemRarity.Superior,
+    name: 'Papaver Bloom',
+    description: 'This hybridized flowering plant was an early escapee from Dire Marsh greenhouses.',
+    imageUrl: 'assets/items/materials/papaver-bloom.jpg',
+    usages: [
+      ItemUsageType.TraxusUpgrades,
+      ItemUsageType.NuCaloricVendorUnlocks,
+      ItemUsageType.TraxusVendorUnlocks,
+    ],
+    sources: [
+      {
+        type: ItemSourceType.MapObjective,
+        mapObjective: ItemSourceMapObjective.UESCIncursion,
+      },
+    ],
+    containers: [
+      {
+        type: ItemContainerType.GrassyAreas,
+      },
+      {
+        type: ItemContainerType.LockedRooms,
+        rarity: ItemRarity.Superior,
+      },
+    ],
+    credits: 300,
+  },
+  {
+    id: 1031,
+    slug: 'molecular-wire',
+    type: ItemType.Material,
+    rarity: ItemRarity.Superior,
+    name: 'Molecular Wire',
+    description: 'Used in molecular electronics. The spool comes preprogrammed with repair algorithms.',
+    imageUrl: 'assets/items/materials/molecular-wire.jpg',
+    usages: [
+      ItemUsageType.TraxusUpgrades,
+      ItemUsageType.NuCaloricVendorUnlocks,
+      ItemUsageType.TraxusVendorUnlocks,
+    ],
+    sources: [
+      {
+        type: ItemSourceType.MapObjective,
+        mapObjective: ItemSourceMapObjective.UESCIncursion,
+      },
+    ],
+    containers: [
+      {
+        type: ItemContainerType.LockedRooms,
+        rarity: ItemRarity.Superior,
+      },
+    ],
+    credits: null,
+  },
+  {
+    id: 1032,
+    slug: 'synchronizer',
+    type: ItemType.Material,
+    rarity: ItemRarity.Superior,
+    name: 'Synchronizer',
+    description: 'Acts as a control unit for UESC ground troops. A faint rhythmic pulse can be felt when held.',
+    imageUrl: 'assets/items/materials/synchronizer.png',
+    usages: [
+      ItemUsageType.CyberAcmeUpgrades,
+      ItemUsageType.NuCaloricVendorUnlocks,
+      ItemUsageType.TraxusVendorUnlocks,
+      ItemUsageType.MIDAVendorUnlocks,
+    ],
+    sources: [{ type: ItemSourceType.UESC }],
+    containers: [],
+    credits: null,
+  },
+  {
+    id: 1033,
+    slug: 'regen-resin',
+    type: ItemType.Material,
+    rarity: ItemRarity.Superior,
+    name: 'Regen Resin',
+    description: 'A',
+    imageUrl: 'assets/items/materials/resin.png',
+    usages: [ItemUsageType.TraxusUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapObjective,
+        mapObjective: ItemSourceMapObjective.UESCIncursion,
+      },
+    ],
+    containers: [
+      { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
+    ],
+    credits: null,
+  },
+  {
+    id: 1034,
+    slug: 'biogenic-alloy',
+    type: ItemType.Material,
+    rarity: ItemRarity.Prestige,
+    name: 'Biogenic Alloy',
+    description: 'A',
+    imageUrl: 'assets/items/materials/biogenic-alloy.jpg',
+    usages: [ItemUsageType.TraxusUpgrades],
+    sources: [
+      {
+        type: ItemSourceType.MapObjective,
+        mapObjective: ItemSourceMapObjective.UESCIncursion,
+      },
+      {
+        type: ItemSourceType.MapObjective,
+        mapObjective: ItemSourceMapObjective.UESCIntercept,
+      },
+    ],
+    containers: [
+      { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Prestige },
+    ],
+    credits: null,
+  },
+  {
+    id: 1035,
+    slug: 'nanocomposites',
+    type: ItemType.Material,
+    rarity: ItemRarity.Enhanced,
+    name: 'Nanocomposites',
+    description: `The original colony mission would've been impossible without breakthroughs in microfabrication.`,
+    imageUrl: 'assets/items/materials/nanocomposites.png',
+    usages: [
+      ItemUsageType.NuCaloricUpgrades,
+      ItemUsageType.NuCaloricVendorUnlocks,
+      ItemUsageType.TraxusVendorUnlocks,
+    ],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.direMarsh,
+        pois: [MAPS.direMarsh.pois.bioResearch, MAPS.direMarsh.pois.fieldMaintenance],
+      },
+    ],
+    containers: [
+      {
+        type: ItemContainerType.MedicalCabinet,
+      },
+    ],
+    credits: 10,
+  },
+  {
+    id: 1036,
+    slug: 'nanozymes',
+    type: ItemType.Material,
+    rarity: ItemRarity.Deluxe,
+    name: 'Nanozymes',
+    description: `Batches of artificial enzymes, each designed for a custom purpose.`,
+    imageUrl: 'assets/items/materials/nanozymes.png',
+    usages: [],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.direMarsh,
+        pois: [MAPS.direMarsh.pois.bioResearch],
+      },
+    ],
+    containers: [],
+    credits: 50,
+  },
+  {
+    id: 1037,
+    slug: 'epoxy-resin',
+    type: ItemType.Material,
+    rarity: ItemRarity.Enhanced,
+    name: 'Epoxy Resin',
+    description: `A versatile colony-era synthetic resin.`,
+    imageUrl: 'assets/items/materials/resin.png',
+    usages: [
+      ItemUsageType.TraxusUpgrades,
+      ItemUsageType.NuCaloricVendorUnlocks,
+      ItemUsageType.TraxusVendorUnlocks,
+    ],
+    sources: [
+      {
+        type: ItemSourceType.MapPoi,
+        map: MAPS.direMarsh,
+        pois: [MAPS.direMarsh.pois.complex, MAPS.direMarsh.pois.algaePonds],
+      },
+    ],
+    containers: [
+      {
+        type: ItemContainerType.ToolCart,
+      },
+    ],
+    credits: 10,
+  },
+  {
+    id: 1038,
+    slug: 'nanotruss',
+    type: ItemType.Material,
+    rarity: ItemRarity.Superior,
+    name: 'Nanotruss',
+    description: `A`,
+    imageUrl: 'assets/items/materials/nanotruss.png',
+    usages: [],
+    sources: [
+      {
+        type: ItemSourceType.MapObjective,
+        mapObjective: ItemSourceMapObjective.UESCIncursion,
+      },
+    ],
+    containers: [
+      { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
+    ],
+    credits: null,
+  },
+  {
+    id: 1039,
+    slug: 'smart-lens',
+    type: ItemType.Material,
+    rarity: ItemRarity.Superior,
+    name: 'Smart Lens',
+    description: `A`,
+    imageUrl: 'assets/items/materials/smart-lens.png',
+    usages: [],
+    sources: [
+      {
+        type: ItemSourceType.MapObjective,
+        mapObjective: ItemSourceMapObjective.UESCIncursion,
+      },
+    ],
+    containers: [
+      { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
+    ],
+    credits: null,
+  },
+];
