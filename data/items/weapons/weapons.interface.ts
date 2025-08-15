@@ -7,17 +7,18 @@ export interface Weapon extends Item {
 }
 
 export interface WeaponStats {
-  firePower: number;
   damage: number;
-  precision: number;
+  precisionMultiplier: number;
   rateOfFire: number;
 
   accuracy: number;
-  control: number; // Not sure if this is needed, it's included on the inventory item but not in the weapon detail in game
   hipfireSpread: number;
   adsSpread: number;
   crouchSpreadBonus: number;
-  movingSpeedPenalty: number;
+  movingSpreadPenalty: number;
+
+  // Not sure if this is needed, it's included on the inventory item but not in the weapon detail in game
+  control: number;
 
   handling: number;
   equipSpeed: number;
@@ -37,6 +38,8 @@ export enum WeaponType {
   MachineGun = 'Machine Gun',
   Pistol = 'Pistol',
   PrecisionRifle = 'Precision Rifle',
+  Railgun = 'Railgun',
+  Shotgun = 'Shotgun',
   SniperRifle = 'Sniper Rifle',
   SubmachineGun = 'Submachine Gun',
 }
@@ -45,4 +48,6 @@ export enum AmmoType {
   Light = 'Light',
   Heavy = 'Heavy',
   MIPS = 'MIPS',
+  VoltBattery = 'Volt Battery',
+  VoltCell = 'Volt Cell',
 }
