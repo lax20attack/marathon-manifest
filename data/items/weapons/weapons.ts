@@ -39,7 +39,6 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.AssaultRifle,
     ammoType: AmmoType.Light,
     stats: {
-      ...DUMMY_WEAPON_STAT,
       damage: 11.5,
       precisionMultiplier: 1.2,
       rateOfFire: 720,
