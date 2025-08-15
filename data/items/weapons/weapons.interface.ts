@@ -1,3 +1,4 @@
+import { AmmoType } from '../ammo/ammo.interface';
 import { Item } from '../items.interface';
 
 export interface Weapon extends Item {
@@ -42,12 +43,4 @@ export enum WeaponType {
   Shotgun = 'Shotgun',
   SniperRifle = 'Sniper Rifle',
   SubmachineGun = 'Submachine Gun',
-}
-
-export enum AmmoType {
-  Light = 'Light',
-  Heavy = 'Heavy',
-  MIPS = 'MIPS',
-  VoltBattery = 'Volt Battery',
-  VoltCell = 'Volt Cell',
 }

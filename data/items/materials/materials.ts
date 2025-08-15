@@ -257,7 +257,7 @@ export const MATERIALS: Item[] = [
     type: ItemType.Material,
     rarity: ItemRarity.Superior,
     name: 'Shell ID',
-    description: 'A unique identifier for a shell item.',
+    description: 'Unique synth-vat identification for each biosynthetic Runner shell. Used as an informal trophy among mercenaries.',
     images: {
       icon: 'assets/items/materials/shell-id-64x64.jpg',
     },
@@ -265,7 +265,7 @@ export const MATERIALS: Item[] = [
     sources: [],
     containers: [],
     activities: [MapActivityType.HIGH_VALUE_TARGET, MapActivityType.SUPPLY_DROP],
-    credits: null,
+    credits: 300,
   },
   {
     id: 1012,

@@ -7,7 +7,7 @@ export const CURRENCIES: Item[] = [
     type: ItemType.Currency,
     rarity: ItemRarity.Standard,
     name: 'Credits',
-    description: 'Money used for various transactions in the game.',
+    description: 'Currency used to purchase items from the Black Market.',
     images: {
       icon: 'assets/items/currency/credits-64x64.jpg',
     },

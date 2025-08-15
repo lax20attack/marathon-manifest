@@ -1,5 +1,6 @@
+import { AmmoType } from '../ammo/ammo.interface';
 import { ItemType } from '../items.interface';
-import { AmmoType, Weapon, WeaponStats, WeaponType } from './weapons.interface';
+import { Weapon, WeaponStats, WeaponType } from './weapons.interface';
 
 // Use a dummy weapon stat while we gather the real data. This will be removed once we have the actual stats.
 const DUMMY_WEAPON_STAT: WeaponStats = {
@@ -315,7 +316,7 @@ export const WEAPONS: Weapon[] = [
     activities: [],
     credits: null,
     weaponType: WeaponType.Shotgun,
-    ammoType: AmmoType.Heavy,
+    ammoType: AmmoType.MIPS,
     stats: DUMMY_WEAPON_STAT,
   },
   {

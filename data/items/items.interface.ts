@@ -40,7 +40,7 @@ export enum ItemUsageType {
 }
 
 export enum ItemType {
-  Armor = 'Armor',
+  Ammo = 'Ammo',
   Backpack = 'Backpack',
   Consumable = 'Consumable',
   Container = 'Container',
