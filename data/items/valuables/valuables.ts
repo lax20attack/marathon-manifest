@@ -12,6 +12,7 @@ export const VALUABLES: Item[] = [
     usages: [],
     sources: [],
     containers: [],
+    activities: [],
     credits: 550,
   },
 ];

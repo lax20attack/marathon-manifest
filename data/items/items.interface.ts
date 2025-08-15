@@ -1,3 +1,4 @@
+import { MapActivityType } from '../maps/activity/activity.interface';
 import { Map, MapPOI } from '../maps/maps.interface';
 
 export interface Item {
@@ -22,7 +23,7 @@ export interface Item {
   // Optional rarity of the item. Weapons don't have a rarity, but other items do.
   rarity?: ItemRarity;
 
-  // Sources from which the item can be obtained. e.g., map objectives, POIs
+  // Sources from which the item can be obtained. e.g., POIs
   sources: ItemSource[];
 
   // Usages of the item, e.g., for upgrades or vendor unlocks
@@ -30,6 +31,9 @@ export interface Item {
 
   // Containers where the item can be found. e.g., Arms Locker, Bioprinter
   containers: ItemContainer[];
+
+  // Activities from which the item can be obtained. e.g., High Value Target, Supply Drop, etc.
+  activities: MapActivityType[];
 
   // How many credits the item costs
   credits?: number;
@@ -59,6 +63,7 @@ export enum ItemType {
   Valuable = 'Valuable',
   Weapon = 'Weapon',
 }
+
 export enum ItemRarity {
   Standard = 'Standard', // White
   Enhanced = 'Enhanced', // Green
@@ -68,16 +73,8 @@ export enum ItemRarity {
 }
 
 export enum ItemSourceType {
-  MapObjective = 'Map Objective',
   MapPoi = 'Map POI',
   UESC = 'UESC',
-}
-
-export enum ItemSourceMapObjective {
-  HighValueTarget = 'High Value Target',
-  SupplyDrop = 'Supply Drop',
-  UESCIncursion = 'UESC Incursion',
-  UESCIntercept = 'UESC Intercept',
 }
 
 export interface ItemSource {
@@ -86,9 +83,6 @@ export interface ItemSource {
   // When type is MapPoi
   map?: Map;
   pois?: MapPOI[];
-
-  // When type is MapObjective
-  mapObjective?: ItemSourceMapObjective;
 }
 
 export enum ItemContainerType {

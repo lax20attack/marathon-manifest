@@ -17,6 +17,7 @@ export const KEYS: Item[] = [
     usages: [],
     sources: [],
     containers: [],
+    activities: [],
     credits: 600,
   },
 ];

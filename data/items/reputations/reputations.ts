@@ -14,6 +14,7 @@ export const REPUTATIONS: Item[] = [
     usages: [],
     sources: [],
     containers: [],
+    activities: [],
   },
   {
     id: 6001,
@@ -28,6 +29,7 @@ export const REPUTATIONS: Item[] = [
     usages: [],
     sources: [],
     containers: [],
+    activities: [],
   },
   {
     id: 6002,
@@ -42,5 +44,6 @@ export const REPUTATIONS: Item[] = [
     usages: [],
     sources: [],
     containers: [],
+    activities: [],
   },
 ];

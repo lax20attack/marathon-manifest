@@ -12,6 +12,7 @@ export const CURRENCIES: Item[] = [
     usages: [],
     sources: [],
     containers: [],
+    activities: [],
     credits: null,
   },
 ];

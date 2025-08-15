@@ -1,5 +1,6 @@
+import { MapActivityType } from '../../maps/activity/activity.interface';
 import { MAPS } from '../../maps/maps';
-import { Item, ItemContainerType, ItemRarity, ItemSourceMapObjective, ItemSourceType, ItemType, ItemUsageType } from '../items.interface';
+import { Item, ItemContainerType, ItemRarity, ItemSourceType, ItemType, ItemUsageType } from '../items.interface';
 
 export const MATERIALS: Item[] = [
   {
@@ -19,6 +20,7 @@ export const MATERIALS: Item[] = [
       },
     ],
     containers: [{ type: ItemContainerType.CoreStorage }],
+    activities: [],
     credits: 10,
   },
   {
@@ -38,6 +40,7 @@ export const MATERIALS: Item[] = [
       },
     ],
     containers: [{ type: ItemContainerType.ArmsLocker }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    activities: [],
     credits: 50,
   },
   {
@@ -57,6 +60,7 @@ export const MATERIALS: Item[] = [
       },
     ],
     containers: [{ type: ItemContainerType.ArmsLocker }],
+    activities: [],
     credits: 10,
   },
   {
@@ -68,14 +72,12 @@ export const MATERIALS: Item[] = [
     description: 'A flexible processor used in advanced crafting recipes.',
     imageUrl: 'assets/items/materials/processor.png',
     usages: [ItemUsageType.CyberAcmeUpgrades],
-    sources: [
-      {
-        type: ItemSourceType.MapObjective,
-        mapObjective: ItemSourceMapObjective.UESCIncursion,
-      },
-    ],
+    sources: [],
     containers: [
       { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
+    ],
+    activities: [
+      MapActivityType.UESC_INCURSION,
     ],
     credits: null,
   },
@@ -96,6 +98,7 @@ export const MATERIALS: Item[] = [
       },
     ],
     containers: [{ type: ItemContainerType.ToolCart }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    activities: [],
     credits: 50,
   },
   {
@@ -119,6 +122,7 @@ export const MATERIALS: Item[] = [
         type: ItemContainerType.GrassyAreas,
       },
     ],
+    activities: [],
     credits: 10,
   },
   {
@@ -134,6 +138,7 @@ export const MATERIALS: Item[] = [
       { type: ItemSourceType.MapPoi, map: MAPS.perimeter, pois: [MAPS.perimeter.pois.northRelay, MAPS.perimeter.pois.southRelay] },
     ],
     containers: [{ type: ItemContainerType.CoreStorage }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    activities: [],
     credits: 50,
   },
   {
@@ -157,6 +162,7 @@ export const MATERIALS: Item[] = [
         type: ItemContainerType.ArmsLocker,
       },
     ],
+    activities: [],
     credits: 50,
   },
   {
@@ -168,14 +174,12 @@ export const MATERIALS: Item[] = [
     description: 'A flexible and durable material used in various crafting recipes.',
     imageUrl: 'assets/items/materials/rubber.png',
     usages: [ItemUsageType.CyberAcmeUpgrades],
-    sources: [
-      {
-        type: ItemSourceType.MapObjective,
-        mapObjective: ItemSourceMapObjective.UESCIncursion,
-      },
-    ],
+    sources: [],
     containers: [
       { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
+    ],
+    activities: [
+      MapActivityType.UESC_INCURSION,
     ],
     credits: null,
   },
@@ -188,14 +192,12 @@ export const MATERIALS: Item[] = [
     description: 'A rare gel used in various crafting recipes.',
     imageUrl: 'assets/items/materials/xerogel.png',
     usages: [ItemUsageType.CyberAcmeUpgrades],
-    sources: [
-      {
-        type: ItemSourceType.MapObjective,
-        mapObjective: ItemSourceMapObjective.UESCIncursion,
-      },
-    ],
+    sources: [],
     containers: [
       { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
+    ],
+    activities: [
+      MapActivityType.UESC_INCURSION,
     ],
     credits: null,
   },
@@ -224,6 +226,7 @@ export const MATERIALS: Item[] = [
         type: ItemContainerType.ArmsLocker,
       },
     ],
+    activities: [],
     credits: 10,
   },
   {
@@ -235,11 +238,9 @@ export const MATERIALS: Item[] = [
     description: 'A unique identifier for a shell item.',
     imageUrl: 'assets/items/materials/shell-id.jpg',
     usages: [ItemUsageType.CyberAcmeUpgrades],
-    sources: [
-      { type: ItemSourceType.MapObjective, mapObjective: ItemSourceMapObjective.HighValueTarget },
-      { type: ItemSourceType.MapObjective, mapObjective: ItemSourceMapObjective.SupplyDrop },
-    ],
+    sources: [],
     containers: [],
+    activities: [MapActivityType.HIGH_VALUE_TARGET, MapActivityType.SUPPLY_DROP],
     credits: null,
   },
   {
@@ -263,6 +264,7 @@ export const MATERIALS: Item[] = [
         type: ItemContainerType.CoreStorage,
       },
     ],
+    activities: [],
     credits: 10,
   },
   {
@@ -289,6 +291,7 @@ export const MATERIALS: Item[] = [
         type: ItemContainerType.GrassyAreas,
       },
     ],
+    activities: [],
     credits: 10,
   },
   {
@@ -308,6 +311,7 @@ export const MATERIALS: Item[] = [
       { type: ItemSourceType.MapPoi, map: MAPS.direMarsh, pois: [MAPS.direMarsh.pois.algaePonds, MAPS.direMarsh.pois.aiUplink] },
     ],
     containers: [{ type: ItemContainerType.CoreStorage }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    activities: [],
     credits: 50,
   },
   {
@@ -325,6 +329,7 @@ export const MATERIALS: Item[] = [
         type: ItemContainerType.TickNest,
       },
     ],
+    activities: [],
     credits: 50,
   },
   {
@@ -336,15 +341,11 @@ export const MATERIALS: Item[] = [
     description: 'A',
     imageUrl: 'assets/items/materials/drive.png',
     usages: [ItemUsageType.NuCaloricUpgrades],
-    sources: [
-      {
-        type: ItemSourceType.MapObjective,
-        mapObjective: ItemSourceMapObjective.UESCIncursion,
-      },
-    ],
+    sources: [],
     containers: [
       { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
     ],
+    activities: [MapActivityType.UESC_INCURSION],
     credits: null,
   },
   {
@@ -369,6 +370,7 @@ export const MATERIALS: Item[] = [
       },
     ],
     containers: [{ type: ItemContainerType.Bioprinter }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    activities: [],
     credits: 50,
   },
   {
@@ -393,6 +395,7 @@ export const MATERIALS: Item[] = [
       },
     ],
     containers: [{ type: ItemContainerType.GrassyAreas }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    activities: [],
     credits: 50,
   },
   {
@@ -404,19 +407,11 @@ export const MATERIALS: Item[] = [
     description: 'A',
     imageUrl: 'assets/items/materials/anomalous-plasma.jpg',
     usages: [ItemUsageType.NuCaloricUpgrades],
-    sources: [
-      {
-        type: ItemSourceType.MapObjective,
-        mapObjective: ItemSourceMapObjective.UESCIncursion,
-      },
-      {
-        type: ItemSourceType.MapObjective,
-        mapObjective: ItemSourceMapObjective.UESCIntercept,
-      },
-    ],
+    sources: [],
     containers: [
       { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Prestige },
     ],
+    activities: [MapActivityType.UESC_INCURSION, MapActivityType.UESC_INTERCEPT],
     credits: null,
   },
   {
@@ -428,15 +423,11 @@ export const MATERIALS: Item[] = [
     description: 'A',
     imageUrl: 'assets/items/materials/biofilament.jpg',
     usages: [ItemUsageType.NuCaloricUpgrades],
-    sources: [
-      {
-        type: ItemSourceType.MapObjective,
-        mapObjective: ItemSourceMapObjective.UESCIncursion,
-      },
-    ],
+    sources: [],
     containers: [
       { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
     ],
+    activities: [MapActivityType.UESC_INCURSION],
     credits: null,
   },
   {
@@ -464,6 +455,7 @@ export const MATERIALS: Item[] = [
         type: ItemContainerType.Bioprinter,
       },
     ],
+    activities: [],
     credits: 10,
   },
   {
@@ -477,6 +469,7 @@ export const MATERIALS: Item[] = [
     usages: [ItemUsageType.NuCaloricUpgrades, ItemUsageType.TraxusUpgrades],
     sources: [],
     containers: [],
+    activities: [],
     credits: 50,
   },
   {
@@ -500,6 +493,7 @@ export const MATERIALS: Item[] = [
         type: ItemContainerType.MunitionsCrate,
       },
     ],
+    activities: [],
     credits: null,
   },
   {
@@ -527,6 +521,7 @@ export const MATERIALS: Item[] = [
         type: ItemContainerType.ToolCart,
       },
     ],
+    activities: [],
     credits: 10,
   },
   {
@@ -546,6 +541,7 @@ export const MATERIALS: Item[] = [
       },
     ],
     containers: [{ type: ItemContainerType.MunitionsCrate }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    activities: [],
     credits: 50,
   },
   {
@@ -570,6 +566,7 @@ export const MATERIALS: Item[] = [
       },
     ],
     containers: [{ type: ItemContainerType.Bioprinter }, { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Deluxe }],
+    activities: [],
     credits: 50,
   },
   {
@@ -601,6 +598,7 @@ export const MATERIALS: Item[] = [
         rarity: ItemRarity.Deluxe,
       },
     ],
+    activities: [],
     credits: 50,
   },
   {
@@ -628,6 +626,7 @@ export const MATERIALS: Item[] = [
         type: ItemContainerType.MunitionsCrate,
       },
     ],
+    activities: [],
     credits: 10,
   },
   {
@@ -639,15 +638,11 @@ export const MATERIALS: Item[] = [
     description: 'A',
     imageUrl: 'assets/items/materials/explosive.png',
     usages: [ItemUsageType.TraxusUpgrades],
-    sources: [
-      {
-        type: ItemSourceType.MapObjective,
-        mapObjective: ItemSourceMapObjective.UESCIncursion,
-      },
-    ],
+    sources: [],
     containers: [
       { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
     ],
+    activities: [MapActivityType.UESC_INCURSION],
     credits: null,
   },
   {
@@ -663,12 +658,7 @@ export const MATERIALS: Item[] = [
       ItemUsageType.NuCaloricVendorUnlocks,
       ItemUsageType.TraxusVendorUnlocks,
     ],
-    sources: [
-      {
-        type: ItemSourceType.MapObjective,
-        mapObjective: ItemSourceMapObjective.UESCIncursion,
-      },
-    ],
+    sources: [],
     containers: [
       {
         type: ItemContainerType.GrassyAreas,
@@ -677,6 +667,9 @@ export const MATERIALS: Item[] = [
         type: ItemContainerType.LockedRooms,
         rarity: ItemRarity.Superior,
       },
+    ],
+    activities: [
+      MapActivityType.UESC_INCURSION,
     ],
     credits: 300,
   },
@@ -693,17 +686,15 @@ export const MATERIALS: Item[] = [
       ItemUsageType.NuCaloricVendorUnlocks,
       ItemUsageType.TraxusVendorUnlocks,
     ],
-    sources: [
-      {
-        type: ItemSourceType.MapObjective,
-        mapObjective: ItemSourceMapObjective.UESCIncursion,
-      },
-    ],
+    sources: [],
     containers: [
       {
         type: ItemContainerType.LockedRooms,
         rarity: ItemRarity.Superior,
       },
+    ],
+    activities: [
+      MapActivityType.UESC_INCURSION,
     ],
     credits: null,
   },
@@ -723,6 +714,7 @@ export const MATERIALS: Item[] = [
     ],
     sources: [{ type: ItemSourceType.UESC }],
     containers: [],
+    activities: [],
     credits: null,
   },
   {
@@ -734,14 +726,12 @@ export const MATERIALS: Item[] = [
     description: 'A',
     imageUrl: 'assets/items/materials/resin.png',
     usages: [ItemUsageType.TraxusUpgrades],
-    sources: [
-      {
-        type: ItemSourceType.MapObjective,
-        mapObjective: ItemSourceMapObjective.UESCIncursion,
-      },
-    ],
+    sources: [],
     containers: [
       { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
+    ],
+    activities: [
+      MapActivityType.UESC_INCURSION,
     ],
     credits: null,
   },
@@ -754,18 +744,13 @@ export const MATERIALS: Item[] = [
     description: 'A',
     imageUrl: 'assets/items/materials/biogenic-alloy.jpg',
     usages: [ItemUsageType.TraxusUpgrades],
-    sources: [
-      {
-        type: ItemSourceType.MapObjective,
-        mapObjective: ItemSourceMapObjective.UESCIncursion,
-      },
-      {
-        type: ItemSourceType.MapObjective,
-        mapObjective: ItemSourceMapObjective.UESCIntercept,
-      },
-    ],
+    sources: [],
     containers: [
       { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Prestige },
+    ],
+    activities: [
+      MapActivityType.UESC_INCURSION,
+      MapActivityType.UESC_INTERCEPT,
     ],
     credits: null,
   },
@@ -794,6 +779,7 @@ export const MATERIALS: Item[] = [
         type: ItemContainerType.MedicalCabinet,
       },
     ],
+    activities: [],
     credits: 10,
   },
   {
@@ -813,6 +799,7 @@ export const MATERIALS: Item[] = [
       },
     ],
     containers: [],
+    activities: [],
     credits: 50,
   },
   {
@@ -840,6 +827,7 @@ export const MATERIALS: Item[] = [
         type: ItemContainerType.ToolCart,
       },
     ],
+    activities: [],
     credits: 10,
   },
   {
@@ -851,14 +839,12 @@ export const MATERIALS: Item[] = [
     description: `A`,
     imageUrl: 'assets/items/materials/nanotruss.png',
     usages: [],
-    sources: [
-      {
-        type: ItemSourceType.MapObjective,
-        mapObjective: ItemSourceMapObjective.UESCIncursion,
-      },
-    ],
+    sources: [],
     containers: [
       { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
+    ],
+    activities: [
+      MapActivityType.UESC_INCURSION,
     ],
     credits: null,
   },
@@ -871,14 +857,12 @@ export const MATERIALS: Item[] = [
     description: `A`,
     imageUrl: 'assets/items/materials/smart-lens.png',
     usages: [],
-    sources: [
-      {
-        type: ItemSourceType.MapObjective,
-        mapObjective: ItemSourceMapObjective.UESCIncursion,
-      },
-    ],
+    sources: [],
     containers: [
       { type: ItemContainerType.LockedRooms, rarity: ItemRarity.Superior },
+    ],
+    activities: [
+      MapActivityType.UESC_INCURSION,
     ],
     credits: null,
   },

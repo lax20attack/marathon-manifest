@@ -14,6 +14,7 @@ export const BACKPACKS: Item[] = [
     usages: [],
     sources: [],
     containers: [],
+    activities: [],
     credits: null,
   },
 ];

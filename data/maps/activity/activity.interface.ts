@@ -1,13 +1,14 @@
 export enum MapActivityType {
-  CREW_EXFIL = 'crewExfil',
-  FLARE_ROOM = 'flareRoom',
-  GAS_ROOM = 'gasRoom',
-  GUARDED_EXFIL = 'guardedExfil',
-  HIGH_VALUE_TARGET = 'highValueTarget',
-  INTERCEPT = 'intercept',
-  SUPPLY_DROP = 'supplyDrop',
-  UESC_INCURSION = 'uescIncursion',
-  UNKNOWN = 'unknownActivity',
+  CREW_EXFIL = 'Crew Exfil',
+  FLARE_ROOM = 'Flare Room',
+  GAS_ROOM = 'Gas Room',
+  GUARDED_EXFIL = 'Guarded Exfil',
+  HIGH_VALUE_TARGET = 'High Value Target',
+  INTERCEPT = 'Intercept',
+  SUPPLY_DROP = 'Supply Drop',
+  UESC_INCURSION = 'UESC Incursion',
+  UESC_INTERCEPT = 'UESC Intercept',
+  UNKNOWN = 'Unknown Activity',
 }
 
 export interface MapActivityItem {

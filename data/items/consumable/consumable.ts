@@ -15,6 +15,7 @@ export const CONSUMABLES: Item[] = [
     imageUrl: 'assets/items/consumables/advanced-mechanics-kit.png',
     usages: [],
     sources: [],
+    activities: [],
     containers: [],
   },
 ];
