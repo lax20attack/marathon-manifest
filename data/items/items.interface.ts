@@ -48,6 +48,7 @@ export enum ItemType {
   DataCard = 'Data Card',
   Key = 'Key',
   Material = 'Material',
+  Mod = 'Mod',
   Reputation = 'Reputation',
   Valuable = 'Valuable',
   Weapon = 'Weapon',
@@ -104,7 +105,7 @@ export interface Item {
   activities: MapActivityType[];
 
   // How many credits the item costs
-  credits?: number;
+  credits: number;
 }
 
 export interface ItemImages {

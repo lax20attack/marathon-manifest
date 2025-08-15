@@ -1,5 +1,6 @@
 import { AmmoType } from '../ammo/ammo.interface';
 import { ItemType } from '../items.interface';
+import { WeaponModSlot } from '../mods/mods.interface';
 import { Weapon, WeaponStats, WeaponType } from './weapons.interface';
 
 // Use a dummy weapon stat while we gather the real data. This will be removed once we have the actual stats.
@@ -63,6 +64,12 @@ export const WEAPONS: Weapon[] = [
       magazine: 24,
       zoom: 1.5,
     },
+    modSlots: [
+      WeaponModSlot.Muzzle,
+      WeaponModSlot.Chip,
+      WeaponModSlot.Magazine,
+      WeaponModSlot.Grip,
+    ],
   },
   {
     id: 8001,
@@ -81,6 +88,12 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.SubmachineGun,
     ammoType: AmmoType.Light,
     stats: DUMMY_WEAPON_STAT,
+    modSlots: [
+      WeaponModSlot.Muzzle,
+      WeaponModSlot.Chip,
+      WeaponModSlot.Magazine,
+      WeaponModSlot.Barrel,
+    ],
   },
   {
     id: 8002,
@@ -99,6 +112,12 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.PrecisionRifle,
     ammoType: AmmoType.Heavy,
     stats: DUMMY_WEAPON_STAT,
+    modSlots: [
+      WeaponModSlot.Muzzle,
+      WeaponModSlot.Chip,
+      WeaponModSlot.Magazine,
+      WeaponModSlot.Barrel,
+    ],
   },
   {
     id: 8003,
@@ -117,6 +136,11 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.SubmachineGun,
     ammoType: AmmoType.Light,
     stats: DUMMY_WEAPON_STAT,
+    modSlots: [
+      WeaponModSlot.Muzzle,
+      WeaponModSlot.Chip,
+      WeaponModSlot.Barrel,
+    ],
   },
   {
     id: 8004,
@@ -135,6 +159,12 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.MachineGun,
     ammoType: AmmoType.Light,
     stats: DUMMY_WEAPON_STAT,
+    modSlots: [
+      WeaponModSlot.Muzzle,
+      WeaponModSlot.Chip,
+      WeaponModSlot.Barrel,
+      WeaponModSlot.UNKNOWN,
+    ],
   },
   {
     id: 8005,
@@ -153,6 +183,12 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.SniperRifle,
     ammoType: AmmoType.MIPS,
     stats: DUMMY_WEAPON_STAT,
+    modSlots: [
+      WeaponModSlot.Muzzle,
+      WeaponModSlot.Chip,
+      WeaponModSlot.Magazine,
+      WeaponModSlot.Barrel,
+    ],
   },
   {
     id: 8006,
@@ -171,6 +207,12 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.Pistol,
     ammoType: AmmoType.Light,
     stats: DUMMY_WEAPON_STAT,
+    modSlots: [
+      WeaponModSlot.Muzzle,
+      WeaponModSlot.Chip,
+      WeaponModSlot.Magazine,
+      WeaponModSlot.Barrel,
+    ],
   },
   {
     id: 8007,
@@ -189,6 +231,11 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.PrecisionRifle,
     ammoType: AmmoType.Heavy,
     stats: DUMMY_WEAPON_STAT,
+    modSlots: [
+      WeaponModSlot.Muzzle,
+      WeaponModSlot.Chip,
+      WeaponModSlot.Barrel,
+    ],
   },
   {
     id: 8010,
@@ -228,6 +275,11 @@ export const WEAPONS: Weapon[] = [
       magazine: 27,
       zoom: 1.5,
     },
+    modSlots: [
+      WeaponModSlot.Chip,
+      WeaponModSlot.Magazine,
+      WeaponModSlot.Grip,
+    ],
   },
   {
     id: 8013,
@@ -246,6 +298,7 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.PrecisionRifle,
     ammoType: AmmoType.Heavy,
     stats: DUMMY_WEAPON_STAT,
+    modSlots: [],
   },
   {
     id: 8014,
@@ -264,6 +317,7 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.PrecisionRifle,
     ammoType: AmmoType.VoltBattery,
     stats: DUMMY_WEAPON_STAT,
+    modSlots: [],
   },
   {
     id: 8017,
@@ -282,6 +336,12 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.Pistol,
     ammoType: AmmoType.VoltCell,
     stats: DUMMY_WEAPON_STAT,
+    modSlots: [
+      WeaponModSlot.Muzzle,
+      WeaponModSlot.Chip,
+      WeaponModSlot.Magazine,
+      WeaponModSlot.Barrel,
+    ],
   },
   {
     id: 8018,
@@ -300,6 +360,7 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.Pistol,
     ammoType: AmmoType.Heavy,
     stats: DUMMY_WEAPON_STAT,
+    modSlots: [],
   },
   {
     id: 8019,
@@ -318,6 +379,11 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.Shotgun,
     ammoType: AmmoType.MIPS,
     stats: DUMMY_WEAPON_STAT,
+    modSlots: [
+      WeaponModSlot.Chip,
+      WeaponModSlot.Grip,
+      WeaponModSlot.Barrel,
+    ],
   },
   {
     id: 8020,
@@ -336,6 +402,7 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.Railgun,
     ammoType: AmmoType.VoltBattery,
     stats: DUMMY_WEAPON_STAT,
+    modSlots: [],
   },
   {
     id: 8021,
@@ -354,5 +421,6 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.SubmachineGun,
     ammoType: AmmoType.VoltCell,
     stats: DUMMY_WEAPON_STAT,
+    modSlots: [],
   },
 ];

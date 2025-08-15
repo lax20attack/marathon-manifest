@@ -1,0 +1,68 @@
+import { Item } from '../items.interface';
+import { WeaponStats, WeaponType } from '../weapons/weapons.interface';
+
+export enum WeaponModSlot {
+  Barrel = 'Barrel',
+  Chip = 'Chip',
+  Grip = 'Grip',
+  Magazine = 'Magazine',
+  Muzzle = 'Muzzle',
+  Optic = 'Optic',
+
+  UNKNOWN = 'Unknown', // Conquest LMG's last slot, not sure what it is yet
+}
+
+// We can remove this - For now we'll keep it to document how the text changes based on the weapon type + slot
+export enum WeaponModType {
+  Array = 'Array',
+  VoltArray = 'Volt Array',
+  VoltCell = 'Volt Cell',
+
+  // Barrels
+  Barrel = 'Barrel', // Generic barrel for all weapons
+  CQCBarrel = 'CQC Barrel', // Close Quarters Combat, aka SMG
+
+  // Chips
+  AssaultChip = 'Assault Chip',
+  CQCChip = 'CQC Chip',
+  MachineGunChip = 'Machine Gun Chip',
+  MarksmanChip = 'Marksman Chip',
+  RailgunChip = 'Railgun Chip',
+  ShotgunChip = 'Shotgun Chip',
+  SniperChip = 'Sniper Chip',
+
+  // Grips
+  ShotgunGrip = 'Shotgun Grip',
+
+  // Magazines
+  AssaultMagazine = 'Assault Magazine',
+
+  // Optics
+  PrecisionOptic = 'Precision Optic',
+  SidearmOptic = 'Sidearm Optic',
+}
+
+export interface WeaponMod extends Item {
+  // Railgun, Shotgun, Sniper Rifle, etc.
+  weaponType: WeaponType;
+
+  // The slot this mod fits into
+  slot: WeaponModSlot;
+
+  // How this mod affects the weapon
+  stats: Partial<WeaponStats>;
+
+  // Some mods have an ability that provides passive effects
+  ability?: ModAbility;
+}
+
+/**
+ * Some mods have abilities that provide passive effects.
+ */
+export interface ModAbility {
+  // The name of the ability
+  name: string;
+
+  // A description of the ability
+  description: string;
+}

@@ -1,10 +1,12 @@
 import { AmmoType } from '../ammo/ammo.interface';
 import { Item } from '../items.interface';
+import { WeaponModSlot } from '../mods/mods.interface';
 
 export interface Weapon extends Item {
   weaponType: WeaponType;
   ammoType: AmmoType;
   stats: WeaponStats;
+  modSlots: WeaponModSlot[];
 }
 
 export interface WeaponStats {

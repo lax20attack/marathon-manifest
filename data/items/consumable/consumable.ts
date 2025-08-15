@@ -19,5 +19,6 @@ export const CONSUMABLES: Item[] = [
     sources: [],
     activities: [],
     containers: [],
+    credits: null,
   },
 ];
