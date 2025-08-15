@@ -8,7 +8,9 @@ export const CURRENCIES: Item[] = [
     rarity: ItemRarity.Standard,
     name: 'Credits',
     description: 'Money used for various transactions in the game.',
-    imageUrl: 'assets/items/currency/credits.jpg',
+    images: {
+      icon: 'assets/items/currency/credits-64x64.jpg',
+    },
     usages: [],
     sources: [],
     containers: [],

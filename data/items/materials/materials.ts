@@ -10,7 +10,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Enhanced,
     name: 'Micro Processor',
     description: 'Grants a temporary but significant boost to computing power.',
-    imageUrl: 'assets/items/materials/processor.png',
+    images: {
+      icon: 'assets/items/materials/processor-64x64.png',
+    },
     usages: [ItemUsageType.CyberAcmeUpgrades, ItemUsageType.NuCaloricVendorUnlocks],
     sources: [
       {
@@ -30,7 +32,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Deluxe,
     name: 'Synthetic Rubber',
     description: 'Constantly devulcanized, recycled, and reused in an exoplanet colony.',
-    imageUrl: 'assets/items/materials/rubber.png',
+    images: {
+      icon: 'assets/items/materials/rubber-64x64.png',
+    },
     usages: [ItemUsageType.CyberAcmeUpgrades],
     sources: [
       {
@@ -50,7 +54,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Enhanced,
     name: 'Aluminum Rods',
     description: 'Lightweight, reliable, and easily recycled.',
-    imageUrl: 'assets/items/materials/rods.png',
+    images: {
+      icon: 'assets/items/materials/rods-64x64.png',
+    },
     usages: [ItemUsageType.CyberAcmeUpgrades],
     sources: [
       {
@@ -70,7 +76,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Superior,
     name: 'Flex Processor',
     description: 'A flexible processor used in advanced crafting recipes.',
-    imageUrl: 'assets/items/materials/processor.png',
+    images: {
+      icon: 'assets/items/materials/processor-64x64.png',
+    },
     usages: [ItemUsageType.CyberAcmeUpgrades],
     sources: [],
     containers: [
@@ -88,7 +96,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Deluxe,
     name: 'Lab Xerogel',
     description: 'A gel-like substance used in advanced crafting recipes.',
-    imageUrl: 'assets/items/materials/xerogel.png',
+    images: {
+      icon: 'assets/items/materials/xerogel-64x64.png',
+    },
     usages: [ItemUsageType.CyberAcmeUpgrades],
     sources: [
       {
@@ -108,7 +118,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Enhanced,
     name: 'Spark Leaf',
     description: 'High in silica content, making this plant a valuable resource on Tau Ceti IV.',
-    imageUrl: 'assets/items/materials/leaf.png',
+    images: {
+      icon: 'assets/items/materials/leaf-64x64.png',
+    },
     usages: [ItemUsageType.CyberAcmeUpgrades],
     sources: [
       {
@@ -132,7 +144,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Deluxe,
     name: 'Expanded Processor',
     description: 'This versatile processor can be permanently attached to any compatible hardware.',
-    imageUrl: 'assets/items/materials/processor.png',
+    images: {
+      icon: 'assets/items/materials/processor-64x64.png',
+    },
     usages: [ItemUsageType.CyberAcmeUpgrades, ItemUsageType.NuCaloricUpgrades],
     sources: [
       { type: ItemSourceType.MapPoi, map: MAPS.perimeter, pois: [MAPS.perimeter.pois.northRelay, MAPS.perimeter.pois.southRelay] },
@@ -148,7 +162,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Deluxe,
     name: 'Steel Rods',
     description: 'Durable rods used in various crafting recipes.',
-    imageUrl: 'assets/items/materials/rods.png',
+    images: {
+      icon: 'assets/items/materials/rods-64x64.png',
+    },
     usages: [ItemUsageType.CyberAcmeUpgrades],
     sources: [
       {
@@ -172,7 +188,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Superior,
     name: 'Symbiote Rubber',
     description: 'A flexible and durable material used in various crafting recipes.',
-    imageUrl: 'assets/items/materials/rubber.png',
+    images: {
+      icon: 'assets/items/materials/rubber-64x64.png',
+    },
     usages: [ItemUsageType.CyberAcmeUpgrades],
     sources: [],
     containers: [
@@ -190,7 +208,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Superior,
     name: 'Combat Xerogel',
     description: 'A rare gel used in various crafting recipes.',
-    imageUrl: 'assets/items/materials/xerogel.png',
+    images: {
+      icon: 'assets/items/materials/xerogel-64x64.png',
+    },
     usages: [ItemUsageType.CyberAcmeUpgrades],
     sources: [],
     containers: [
@@ -208,7 +228,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Enhanced,
     name: 'Hydrocarbon Rubber',
     description: 'Easily harvested from plant tissue, but prone to decomposition on Tau Ceti IV.',
-    imageUrl: 'assets/items/materials/rubber.png',
+    images: {
+      icon: 'assets/items/materials/rubber-64x64.png',
+    },
     usages: [
       ItemUsageType.CyberAcmeUpgrades,
       ItemUsageType.NuCaloricVendorUnlocks,
@@ -236,7 +258,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Superior,
     name: 'Shell ID',
     description: 'A unique identifier for a shell item.',
-    imageUrl: 'assets/items/materials/shell-id.jpg',
+    images: {
+      icon: 'assets/items/materials/shell-id-64x64.jpg',
+    },
     usages: [ItemUsageType.CyberAcmeUpgrades],
     sources: [],
     containers: [],
@@ -250,7 +274,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Enhanced,
     name: 'Storage Drive',
     description: 'A potential treasure trove of colony-era data.',
-    imageUrl: 'assets/items/materials/drive.png',
+    images: {
+      icon: 'assets/items/materials/drive-64x64.png',
+    },
     usages: [
       ItemUsageType.NuCaloricUpgrades,
       ItemUsageType.NuCaloricVendorUnlocks,
@@ -274,7 +300,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Enhanced,
     name: 'Organic Lens',
     description: 'Mass-produced for military, scientific, and communicational devices.',
-    imageUrl: 'assets/items/materials/lens.png',
+    images: {
+      icon: 'assets/items/materials/lens-64x64.png',
+    },
     usages: [ItemUsageType.NuCaloricUpgrades, ItemUsageType.CyberAcmeUpgrades],
     sources: [
       {
@@ -301,7 +329,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Deluxe,
     name: 'Encrypted Drive',
     description: 'A',
-    imageUrl: 'assets/items/materials/drive.png',
+    images: {
+      icon: 'assets/items/materials/drive-64x64.png',
+    },
     usages: [
       ItemUsageType.NuCaloricUpgrades,
       ItemUsageType.NuCaloricVendorUnlocks,
@@ -321,7 +351,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Deluxe,
     name: 'Chitin Sample',
     description: 'A',
-    imageUrl: 'assets/items/materials/chitin-sample.jpg',
+    images: {
+      icon: 'assets/items/materials/chitin-sample-64x64.jpg',
+    },
     usages: [ItemUsageType.NuCaloricUpgrades],
     sources: [],
     containers: [
@@ -339,7 +371,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Superior,
     name: 'Coherence Drive',
     description: 'A',
-    imageUrl: 'assets/items/materials/drive.png',
+    images: {
+      icon: 'assets/items/materials/drive-64x64.png',
+    },
     usages: [ItemUsageType.NuCaloricUpgrades],
     sources: [],
     containers: [
@@ -355,7 +389,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Deluxe,
     name: 'Conductive Filament',
     description: 'Once proprietary to the UESC, now scavenged by everyone on Tau Ceti IV.',
-    imageUrl: 'assets/items/materials/filament.png',
+    images: {
+      icon: 'assets/items/materials/filament-64x64.png',
+    },
     usages: [
       ItemUsageType.NuCaloricUpgrades,
       ItemUsageType.TraxusUpgrades,
@@ -380,7 +416,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Deluxe,
     name: 'Tarax Seed',
     description: 'Mildly toxic when eaten, but pharmaceuticals can be extracted from the seeds.',
-    imageUrl: 'assets/items/materials/leaf.png',
+    images: {
+      icon: 'assets/items/materials/leaf-64x64.png',
+    },
     usages: [
       ItemUsageType.NuCaloricUpgrades,
       ItemUsageType.TraxusUpgrades,
@@ -405,7 +443,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Prestige,
     name: 'Anomalous Plasma',
     description: 'A',
-    imageUrl: 'assets/items/materials/anomalous-plasma.jpg',
+    images: {
+      icon: 'assets/items/materials/anomalous-plasma-64x64.jpg',
+    },
     usages: [ItemUsageType.NuCaloricUpgrades],
     sources: [],
     containers: [
@@ -421,7 +461,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Superior,
     name: 'Biofilament',
     description: 'A',
-    imageUrl: 'assets/items/materials/biofilament.jpg',
+    images: {
+      icon: 'assets/items/materials/biofilament-64x64.jpg',
+    },
     usages: [ItemUsageType.NuCaloricUpgrades],
     sources: [],
     containers: [
@@ -437,7 +479,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Enhanced,
     name: 'Plastic Filament',
     description: 'A',
-    imageUrl: 'assets/items/materials/filament.png',
+    images: {
+      icon: 'assets/items/materials/filament-64x64.png',
+    },
     usages: [
       ItemUsageType.NuCaloricUpgrades,
       ItemUsageType.NuCaloricVendorUnlocks,
@@ -465,7 +509,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Deluxe,
     name: 'Fungal Growth',
     description: 'A',
-    imageUrl: 'assets/items/materials/fungal-growth.jpg',
+    images: {
+      icon: 'assets/items/materials/fungal-growth-64x64.jpg',
+    },
     usages: [ItemUsageType.NuCaloricUpgrades, ItemUsageType.TraxusUpgrades],
     sources: [],
     containers: [],
@@ -479,7 +525,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Enhanced,
     name: 'Carbon Wire',
     description: 'A',
-    imageUrl: 'assets/items/materials/carbon-wire.jpg',
+    images: {
+      icon: 'assets/items/materials/carbon-wire-64x64.jpg',
+    },
     usages: [ItemUsageType.TraxusUpgrades],
     sources: [
       {
@@ -503,7 +551,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Enhanced,
     name: 'Basic Xerogel',
     description: 'Multipurpose construction material, perfect for space colonies.',
-    imageUrl: 'assets/items/materials/xerogel.png',
+    images: {
+      icon: 'assets/items/materials/xerogel-64x64.png',
+    },
     usages: [
       ItemUsageType.TraxusUpgrades,
       ItemUsageType.NuCaloricVendorUnlocks,
@@ -531,7 +581,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Deluxe,
     name: 'Gel Explosive',
     description: 'A',
-    imageUrl: 'assets/items/materials/explosive.png',
+    images: {
+      icon: 'assets/items/materials/explosive-64x64.png',
+    },
     usages: [ItemUsageType.TraxusUpgrades],
     sources: [
       {
@@ -551,7 +603,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Deluxe,
     name: 'Dynamic Lens',
     description: 'Uses multiple images to gather visual data.',
-    imageUrl: 'assets/items/materials/lens.png',
+    images: {
+      icon: 'assets/items/materials/lens-64x64.png',
+    },
     usages: [
       ItemUsageType.NuCaloricUpgrades,
       ItemUsageType.TraxusUpgrades,
@@ -576,7 +630,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Deluxe,
     name: 'Polymer Wire',
     description: 'Organic polymers "grown" for conductivity, and a frequent target of scavengers.',
-    imageUrl: 'assets/items/materials/rubber.png',
+    images: {
+      icon: 'assets/items/materials/rubber-64x64.png',
+    },
     usages: [
       ItemUsageType.TraxusUpgrades,
       ItemUsageType.NuCaloricVendorUnlocks,
@@ -608,7 +664,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Enhanced,
     name: 'Putty Explosive',
     description: `Soft, moldable, and stable. Sometimes it's best to stick with the classics.`,
-    imageUrl: 'assets/items/materials/explosive.png',
+    images: {
+      icon: 'assets/items/materials/explosive-64x64.png',
+    },
     usages: [
       ItemUsageType.TraxusUpgrades,
       ItemUsageType.NuCaloricVendorUnlocks,
@@ -636,7 +694,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Superior,
     name: 'Liquid Explosive',
     description: 'A',
-    imageUrl: 'assets/items/materials/explosive.png',
+    images: {
+      icon: 'assets/items/materials/explosive-64x64.png',
+    },
     usages: [ItemUsageType.TraxusUpgrades],
     sources: [],
     containers: [
@@ -652,7 +712,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Superior,
     name: 'Papaver Bloom',
     description: 'This hybridized flowering plant was an early escapee from Dire Marsh greenhouses.',
-    imageUrl: 'assets/items/materials/papaver-bloom.jpg',
+    images: {
+      icon: 'assets/items/materials/papaver-bloom-64x64.jpg',
+    },
     usages: [
       ItemUsageType.TraxusUpgrades,
       ItemUsageType.NuCaloricVendorUnlocks,
@@ -680,7 +742,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Superior,
     name: 'Molecular Wire',
     description: 'Used in molecular electronics. The spool comes preprogrammed with repair algorithms.',
-    imageUrl: 'assets/items/materials/molecular-wire.jpg',
+    images: {
+      icon: 'assets/items/materials/molecular-wire-64x64.jpg',
+    },
     usages: [
       ItemUsageType.TraxusUpgrades,
       ItemUsageType.NuCaloricVendorUnlocks,
@@ -705,7 +769,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Superior,
     name: 'Synchronizer',
     description: 'Acts as a control unit for UESC ground troops. A faint rhythmic pulse can be felt when held.',
-    imageUrl: 'assets/items/materials/synchronizer.png',
+    images: {
+      icon: 'assets/items/materials/synchronizer-64x64.png',
+    },
     usages: [
       ItemUsageType.CyberAcmeUpgrades,
       ItemUsageType.NuCaloricVendorUnlocks,
@@ -724,7 +790,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Superior,
     name: 'Regen Resin',
     description: 'A',
-    imageUrl: 'assets/items/materials/resin.png',
+    images: {
+      icon: 'assets/items/materials/resin-64x64.png',
+    },
     usages: [ItemUsageType.TraxusUpgrades],
     sources: [],
     containers: [
@@ -742,7 +810,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Prestige,
     name: 'Biogenic Alloy',
     description: 'A',
-    imageUrl: 'assets/items/materials/biogenic-alloy.jpg',
+    images: {
+      icon: 'assets/items/materials/biogenic-alloy-64x64.jpg',
+    },
     usages: [ItemUsageType.TraxusUpgrades],
     sources: [],
     containers: [
@@ -761,7 +831,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Enhanced,
     name: 'Nanocomposites',
     description: `The original colony mission would've been impossible without breakthroughs in microfabrication.`,
-    imageUrl: 'assets/items/materials/nanocomposites.png',
+    images: {
+      icon: 'assets/items/materials/nanocomposites-64x64.png',
+    },
     usages: [
       ItemUsageType.NuCaloricUpgrades,
       ItemUsageType.NuCaloricVendorUnlocks,
@@ -789,7 +861,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Deluxe,
     name: 'Nanozymes',
     description: `Batches of artificial enzymes, each designed for a custom purpose.`,
-    imageUrl: 'assets/items/materials/nanozymes.png',
+    images: {
+      icon: 'assets/items/materials/nanozymes-64x64.png',
+    },
     usages: [],
     sources: [
       {
@@ -809,7 +883,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Enhanced,
     name: 'Epoxy Resin',
     description: `A versatile colony-era synthetic resin.`,
-    imageUrl: 'assets/items/materials/resin.png',
+    images: {
+      icon: 'assets/items/materials/resin-64x64.png',
+    },
     usages: [
       ItemUsageType.TraxusUpgrades,
       ItemUsageType.NuCaloricVendorUnlocks,
@@ -837,7 +913,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Superior,
     name: 'Nanotruss',
     description: `A`,
-    imageUrl: 'assets/items/materials/nanotruss.png',
+    images: {
+      icon: 'assets/items/materials/nanotruss-64x64.png',
+    },
     usages: [],
     sources: [],
     containers: [
@@ -855,7 +933,9 @@ export const MATERIALS: Item[] = [
     rarity: ItemRarity.Superior,
     name: 'Smart Lens',
     description: `A`,
-    imageUrl: 'assets/items/materials/smart-lens.png',
+    images: {
+      icon: 'assets/items/materials/smart-lens-64x64.png',
+    },
     usages: [],
     sources: [],
     containers: [

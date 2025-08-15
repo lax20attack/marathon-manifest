@@ -12,7 +12,9 @@ export const CONSUMABLES: Item[] = [
     Maximizes Hardware stat for extended duration.
     <br/>
     Adds buffer against hostile data corruption.`,
-    imageUrl: 'assets/items/consumables/advanced-mechanics-kit.png',
+    images: {
+      icon: 'assets/items/consumables/advanced-mechanics-kit-64x64.png',
+    },
     usages: [],
     sources: [],
     activities: [],
