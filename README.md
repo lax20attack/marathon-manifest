@@ -10,7 +10,13 @@ Contribute by opening an issue or creating a PR.
 
 ### Please DO NOT break your NDA by adding items from private builds!
 
-No PR is too small. Larger architectural or layout changes are welcome too, but let's discuss first.
+First PR? Awesome, you got this. Don't worry, you can't break this repo.
+
+1. Copy this repositoy - Fork this repository, and pull it locally.
+2. Open the folder with VS Code
+3. Install the suggested "Prettier" extension. This helps keep formatting the same.
+4. Make your changes locally and push to your fork
+5. Create a PR on this repository, with your fork as the source.
 
 
 ## Housekeeping
