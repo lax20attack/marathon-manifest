@@ -1,6 +1,6 @@
 import { ItemRarity, ItemType } from '../items.interface';
 import { WeaponType } from '../weapons/weapons.interface';
-import { WeaponMod, WeaponModSlot } from './mods.interface';
+import { WeaponMod, WeaponModSlotType } from './mods.interface';
 
 export const MODS: WeaponMod[] = [
   {
@@ -9,15 +9,15 @@ export const MODS: WeaponMod[] = [
     slug: 'flash-draw-chip',
     rarity: ItemRarity.Superior,
     weaponType: WeaponType.SubmachineGun,
-    slot: WeaponModSlot.Chip,
+    slot: WeaponModSlotType.Chip,
     type: ItemType.Mod,
     description: null,
     ability: {
       name: 'Energy Siphon',
-      description: 'Specialized ammunition for high-damage ballistic weaponry.',
+      description: 'Restore health or shields when damaging a target affected by EMP.',
     },
     images: {
-      icon: 'assets/items/weapons/mods/chip-64x64.png',
+      icon: 'assets/items/weapons/mods/chip-64x64.jpg',
     },
     usages: [],
     sources: [],
@@ -41,7 +41,7 @@ export const MODS: WeaponMod[] = [
     slug: 'suppression-muzzle',
     rarity: ItemRarity.Prestige,
     weaponType: WeaponType.SubmachineGun,
-    slot: WeaponModSlot.Barrel,
+    slot: WeaponModSlotType.Barrel,
     type: ItemType.Mod,
     description: null,
     ability: {
@@ -49,7 +49,7 @@ export const MODS: WeaponMod[] = [
       description: `Silences this weapon's shots and scrambles targets' health display`,
     },
     images: {
-      icon: 'assets/items/weapons/mods/muzzle-64x64.png',
+      icon: 'assets/items/weapons/mods/muzzle-64x64.jpg',
     },
     usages: [],
     sources: [],
@@ -69,12 +69,12 @@ export const MODS: WeaponMod[] = [
     slug: 'extended-feather-magazine',
     rarity: ItemRarity.Enhanced,
     weaponType: WeaponType.AssaultRifle,
-    slot: WeaponModSlot.Magazine,
+    slot: WeaponModSlotType.Magazine,
     type: ItemType.Mod,
     description: null,
     ability: null,
     images: {
-      icon: 'assets/items/weapons/mods/magazine-64x64.png',
+      icon: 'assets/items/weapons/mods/magazine-64x64.jpg',
     },
     usages: [],
     sources: [],
@@ -95,12 +95,12 @@ export const MODS: WeaponMod[] = [
     slug: 'keen-scout-chip',
     rarity: ItemRarity.Enhanced,
     weaponType: WeaponType.AssaultRifle,
-    slot: WeaponModSlot.Chip,
+    slot: WeaponModSlotType.Chip,
     type: ItemType.Mod,
     description: null,
     ability: null,
     images: {
-      icon: 'assets/items/weapons/mods/chip-64x64.png',
+      icon: 'assets/items/weapons/mods/chip-64x64.jpg',
     },
     usages: [],
     sources: [],

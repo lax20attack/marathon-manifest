@@ -90,7 +90,7 @@ export interface Item {
   images: ItemImages;
 
   // Optional rarity of the item. Weapons don't have a rarity, but other items do.
-  rarity?: ItemRarity;
+  rarity: ItemRarity;
 
   // Sources from which the item can be obtained. e.g., POIs
   sources: ItemSource[];

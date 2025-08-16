@@ -1,7 +1,7 @@
 import { Item } from '../items.interface';
 import { WeaponStats, WeaponType } from '../weapons/weapons.interface';
 
-export enum WeaponModSlot {
+export enum WeaponModSlotType {
   Barrel = 'Barrel',
   Chip = 'Chip',
   Grip = 'Grip',
@@ -42,12 +42,56 @@ export enum WeaponModType {
   SidearmOptic = 'Sidearm Optic',
 }
 
+export interface WeaponModSlot {
+  type: WeaponModSlotType;
+  name: string;
+  imageUrl: string;
+}
+
+export const WEAPON_MOD_SLOTS: Record<WeaponModSlotType, WeaponModSlot> = {
+  [WeaponModSlotType.Barrel]: {
+    type: WeaponModSlotType.Barrel,
+    name: 'Barrel',
+    imageUrl: 'assets/items/mods/slots/barrel-64x64.jpg',
+  },
+  [WeaponModSlotType.Chip]: {
+    type: WeaponModSlotType.Chip,
+    name: 'Chip',
+    imageUrl: 'assets/items/mods/slots/chip-42x42.jpg',
+  },
+  [WeaponModSlotType.Grip]: {
+    type: WeaponModSlotType.Grip,
+    name: 'Grip',
+    imageUrl: 'assets/items/mods/slots/grip-42x42.jpg',
+  },
+  [WeaponModSlotType.Magazine]: {
+    type: WeaponModSlotType.Magazine,
+    name: 'Magazine',
+    imageUrl: 'assets/items/mods/slots/magazine-42x42.jpg',
+  },
+  [WeaponModSlotType.Muzzle]: {
+    type: WeaponModSlotType.Muzzle,
+    name: 'Muzzle',
+    imageUrl: 'assets/items/mods/slots/muzzle-42x42.jpg',
+  },
+  [WeaponModSlotType.Optic]: {
+    type: WeaponModSlotType.Optic,
+    name: 'Optic',
+    imageUrl: 'assets/items/mods/slots/optic-42x42.jpg',
+  },
+  [WeaponModSlotType.UNKNOWN]: {
+    type: WeaponModSlotType.UNKNOWN,
+    name: 'Unknown',
+    imageUrl: 'assets/items/mods/slots/unknown-42x42.jpg',
+  },
+};
+
 export interface WeaponMod extends Item {
   // Railgun, Shotgun, Sniper Rifle, etc.
   weaponType: WeaponType;
 
   // The slot this mod fits into
-  slot: WeaponModSlot;
+  slot: WeaponModSlotType;
 
   // How this mod affects the weapon
   stats: Partial<WeaponStats>;

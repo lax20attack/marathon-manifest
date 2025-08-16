@@ -1,6 +1,6 @@
 import { AmmoType } from '../ammo/ammo.interface';
-import { ItemType } from '../items.interface';
-import { WeaponModSlot } from '../mods/mods.interface';
+import { ItemRarity, ItemType } from '../items.interface';
+import { WeaponModSlotType } from '../mods/mods.interface';
 import { Weapon, WeaponStats, WeaponType } from './weapons.interface';
 
 // Use a dummy weapon stat while we gather the real data. This will be removed once we have the actual stats.
@@ -33,6 +33,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'Overrun AR',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/overrun-ar-180x135.png',
     },
@@ -64,11 +65,11 @@ export const WEAPONS: Weapon[] = [
       magazine: 24,
       zoom: 1.5,
     },
-    modSlots: [
-      WeaponModSlot.Muzzle,
-      WeaponModSlot.Chip,
-      WeaponModSlot.Magazine,
-      WeaponModSlot.Grip,
+    modSlotTypes: [
+      WeaponModSlotType.Muzzle,
+      WeaponModSlotType.Chip,
+      WeaponModSlotType.Magazine,
+      WeaponModSlotType.Grip,
     ],
   },
   {
@@ -77,6 +78,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'Bully SMG',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/bully-smg-180x135.png',
     },
@@ -88,11 +90,11 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.SubmachineGun,
     ammoType: AmmoType.Light,
     stats: DUMMY_WEAPON_STAT,
-    modSlots: [
-      WeaponModSlot.Muzzle,
-      WeaponModSlot.Chip,
-      WeaponModSlot.Magazine,
-      WeaponModSlot.Barrel,
+    modSlotTypes: [
+      WeaponModSlotType.Muzzle,
+      WeaponModSlotType.Chip,
+      WeaponModSlotType.Magazine,
+      WeaponModSlotType.Barrel,
     ],
   },
   {
@@ -101,6 +103,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'Twin Tap HBR',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/twin-tap-hbr-180x135.png',
     },
@@ -112,11 +115,11 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.PrecisionRifle,
     ammoType: AmmoType.Heavy,
     stats: DUMMY_WEAPON_STAT,
-    modSlots: [
-      WeaponModSlot.Muzzle,
-      WeaponModSlot.Chip,
-      WeaponModSlot.Magazine,
-      WeaponModSlot.Barrel,
+    modSlotTypes: [
+      WeaponModSlotType.Muzzle,
+      WeaponModSlotType.Chip,
+      WeaponModSlotType.Magazine,
+      WeaponModSlotType.Barrel,
     ],
   },
   {
@@ -125,6 +128,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'BRRT Smg',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/brrt-smg-180x135.png',
     },
@@ -136,10 +140,10 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.SubmachineGun,
     ammoType: AmmoType.Light,
     stats: DUMMY_WEAPON_STAT,
-    modSlots: [
-      WeaponModSlot.Muzzle,
-      WeaponModSlot.Chip,
-      WeaponModSlot.Barrel,
+    modSlotTypes: [
+      WeaponModSlotType.Muzzle,
+      WeaponModSlotType.Chip,
+      WeaponModSlotType.Barrel,
     ],
   },
   {
@@ -148,6 +152,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'Conquest LMG',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/conquest-lmg-180x135.png',
     },
@@ -159,11 +164,11 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.MachineGun,
     ammoType: AmmoType.Light,
     stats: DUMMY_WEAPON_STAT,
-    modSlots: [
-      WeaponModSlot.Muzzle,
-      WeaponModSlot.Chip,
-      WeaponModSlot.Barrel,
-      WeaponModSlot.UNKNOWN,
+    modSlotTypes: [
+      WeaponModSlotType.Muzzle,
+      WeaponModSlotType.Chip,
+      WeaponModSlotType.Barrel,
+      WeaponModSlotType.UNKNOWN,
     ],
   },
   {
@@ -172,6 +177,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'Longshot',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/longshot-180x135.png',
     },
@@ -183,11 +189,11 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.SniperRifle,
     ammoType: AmmoType.MIPS,
     stats: DUMMY_WEAPON_STAT,
-    modSlots: [
-      WeaponModSlot.Muzzle,
-      WeaponModSlot.Chip,
-      WeaponModSlot.Magazine,
-      WeaponModSlot.Barrel,
+    modSlotTypes: [
+      WeaponModSlotType.Muzzle,
+      WeaponModSlotType.Chip,
+      WeaponModSlotType.Magazine,
+      WeaponModSlotType.Barrel,
     ],
   },
   {
@@ -196,6 +202,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'CE Tactical Sidearm',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/ce-tactical-sidearm-180x135.png',
     },
@@ -207,11 +214,11 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.Pistol,
     ammoType: AmmoType.Light,
     stats: DUMMY_WEAPON_STAT,
-    modSlots: [
-      WeaponModSlot.Muzzle,
-      WeaponModSlot.Chip,
-      WeaponModSlot.Magazine,
-      WeaponModSlot.Barrel,
+    modSlotTypes: [
+      WeaponModSlotType.Muzzle,
+      WeaponModSlotType.Chip,
+      WeaponModSlotType.Magazine,
+      WeaponModSlotType.Barrel,
     ],
   },
   {
@@ -220,6 +227,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'Repeater HPR',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/repeater-hpr-180x135.png',
     },
@@ -231,10 +239,10 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.PrecisionRifle,
     ammoType: AmmoType.Heavy,
     stats: DUMMY_WEAPON_STAT,
-    modSlots: [
-      WeaponModSlot.Muzzle,
-      WeaponModSlot.Chip,
-      WeaponModSlot.Barrel,
+    modSlotTypes: [
+      WeaponModSlotType.Muzzle,
+      WeaponModSlotType.Chip,
+      WeaponModSlotType.Barrel,
     ],
   },
   {
@@ -243,6 +251,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'M77 Assault Rifle',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/m77-assault-rifle-180x135.png',
       large: 'assets/items/weapons/m77-assault-rifle-600x450.png',
@@ -275,10 +284,10 @@ export const WEAPONS: Weapon[] = [
       magazine: 27,
       zoom: 1.5,
     },
-    modSlots: [
-      WeaponModSlot.Chip,
-      WeaponModSlot.Magazine,
-      WeaponModSlot.Grip,
+    modSlotTypes: [
+      WeaponModSlotType.Chip,
+      WeaponModSlotType.Magazine,
+      WeaponModSlotType.Grip,
     ],
   },
   {
@@ -287,6 +296,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'Hardline PR',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/hardline-pr-180x135.png',
     },
@@ -298,7 +308,7 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.PrecisionRifle,
     ammoType: AmmoType.Heavy,
     stats: DUMMY_WEAPON_STAT,
-    modSlots: [],
+    modSlotTypes: [],
   },
   {
     id: 8014,
@@ -306,6 +316,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'V66 Lookout',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/v66-lookout-180x135.png',
     },
@@ -317,7 +328,7 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.PrecisionRifle,
     ammoType: AmmoType.VoltBattery,
     stats: DUMMY_WEAPON_STAT,
-    modSlots: [],
+    modSlotTypes: [],
   },
   {
     id: 8017,
@@ -325,6 +336,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'V11 Punch',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/v11-punch-180x135.png',
     },
@@ -336,11 +348,11 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.Pistol,
     ammoType: AmmoType.VoltCell,
     stats: DUMMY_WEAPON_STAT,
-    modSlots: [
-      WeaponModSlot.Muzzle,
-      WeaponModSlot.Chip,
-      WeaponModSlot.Magazine,
-      WeaponModSlot.Barrel,
+    modSlotTypes: [
+      WeaponModSlotType.Muzzle,
+      WeaponModSlotType.Chip,
+      WeaponModSlotType.Magazine,
+      WeaponModSlotType.Barrel,
     ],
   },
   {
@@ -349,6 +361,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'Magnum MC',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/magnum-mc-180x135.png',
     },
@@ -360,7 +373,7 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.Pistol,
     ammoType: AmmoType.Heavy,
     stats: DUMMY_WEAPON_STAT,
-    modSlots: [],
+    modSlotTypes: [],
   },
   {
     id: 8019,
@@ -368,6 +381,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'WSTR Combat Shotgun',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/wstr-combat-shotgun-180x135.png',
     },
@@ -379,10 +393,10 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.Shotgun,
     ammoType: AmmoType.MIPS,
     stats: DUMMY_WEAPON_STAT,
-    modSlots: [
-      WeaponModSlot.Chip,
-      WeaponModSlot.Grip,
-      WeaponModSlot.Barrel,
+    modSlotTypes: [
+      WeaponModSlotType.Chip,
+      WeaponModSlotType.Grip,
+      WeaponModSlotType.Barrel,
     ],
   },
   {
@@ -391,6 +405,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'V00 Zeus RG',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/v00-zeus-rg-180x135.png',
     },
@@ -402,7 +417,7 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.Railgun,
     ammoType: AmmoType.VoltBattery,
     stats: DUMMY_WEAPON_STAT,
-    modSlots: [],
+    modSlotTypes: [],
   },
   {
     id: 8021,
@@ -410,6 +425,7 @@ export const WEAPONS: Weapon[] = [
     type: ItemType.Weapon,
     name: 'V22 Volt Thrower',
     description: '',
+    rarity: ItemRarity.Standard,
     images: {
       icon: 'assets/items/weapons/v22-volt-thrower-180x135.png',
     },
@@ -421,6 +437,6 @@ export const WEAPONS: Weapon[] = [
     weaponType: WeaponType.SubmachineGun,
     ammoType: AmmoType.VoltCell,
     stats: DUMMY_WEAPON_STAT,
-    modSlots: [],
+    modSlotTypes: [],
   },
 ];
