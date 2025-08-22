@@ -12,12 +12,28 @@ export enum FactionType {
 }
 
 export interface Faction {
+  // Unique identifier for the faction, used in URLs
+  slug: string;
+
+  // Faction name for display
   name: FactionType;
+
+  // Description of the faction
   description: string;
+
+  // Color theme for the faction, used in UI elements
   theme: FactionTheme;
+
+  // Meta information about the faction's agent
   agent: FactionAgent;
-  upgrades: FactionUpgrade[];
+
+  // Optimization is unlocked after purchasing all upgrades for the faction
   optimization: FactionUpgradeOptimization;
+
+  // List of upgrades available for the faction
+  upgrades: FactionUpgrade[];
+
+  // List of contracts available for the faction
   contracts: FactionContract[];
 }
 

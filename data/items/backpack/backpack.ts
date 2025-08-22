@@ -10,10 +10,10 @@ export const BACKPACKS: Item[] = [
     description: `+8 slots to carry more items. 
     <br/><br/>
     + Health and shield consumable usage is slightly faster.`,
-    imageUrl: 'assets/items/backpack/8xs-med-pack.jpg',
-    usages: [],
-    sources: [],
-    containers: [],
+    images: {
+      icon: 'assets/items/backpack/8xs-med-pack-64x64.png',
+    },
+    sources: {},
     credits: null,
   },
 ];

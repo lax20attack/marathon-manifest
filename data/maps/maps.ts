@@ -1,5 +1,5 @@
 import { MAP_ACTIVITY_ITEMS } from './activity/activity';
-import { MapActivityType } from './activity/activity.interface';
+import { MapActivitySourceType } from './activity/activity.interface';
 import { Map, MapType } from './maps.interface';
 
 export const MAPS: Record<MapType, Map> = {
@@ -37,17 +37,17 @@ export const MAPS: Record<MapType, Map> = {
     },
     imageUrl: 'assets/maps/perimeter.jpg',
     activities: [
-      MAP_ACTIVITY_ITEMS[MapActivityType.CREW_EXFIL],
-      MAP_ACTIVITY_ITEMS[MapActivityType.GUARDED_EXFIL],
-      MAP_ACTIVITY_ITEMS[MapActivityType.HIGH_VALUE_TARGET],
-      MAP_ACTIVITY_ITEMS[MapActivityType.INTERCEPT],
-      MAP_ACTIVITY_ITEMS[MapActivityType.UESC_INCURSION],
-      MAP_ACTIVITY_ITEMS[MapActivityType.UNKNOWN],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.CREW_EXFIL],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.GUARDED_EXFIL],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.HIGH_VALUE_TARGET],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.INTERCEPT],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.UESC_INCURSION],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.UNKNOWN],
     ],
     hiddenActivities: [
-      MAP_ACTIVITY_ITEMS[MapActivityType.GAS_ROOM],
-      MAP_ACTIVITY_ITEMS[MapActivityType.SUPPLY_DROP],
-      MAP_ACTIVITY_ITEMS[MapActivityType.FLARE_ROOM],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.GAS_ROOM],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.SUPPLY_DROP],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.FLARE_ROOM],
     ],
   },
   direMarsh: {
@@ -94,17 +94,17 @@ export const MAPS: Record<MapType, Map> = {
     },
     imageUrl: 'assets/maps/dire-marsh.jpg',
     activities: [
-      MAP_ACTIVITY_ITEMS[MapActivityType.CREW_EXFIL],
-      MAP_ACTIVITY_ITEMS[MapActivityType.GUARDED_EXFIL],
-      MAP_ACTIVITY_ITEMS[MapActivityType.HIGH_VALUE_TARGET],
-      MAP_ACTIVITY_ITEMS[MapActivityType.INTERCEPT],
-      MAP_ACTIVITY_ITEMS[MapActivityType.UESC_INCURSION],
-      MAP_ACTIVITY_ITEMS[MapActivityType.UNKNOWN],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.CREW_EXFIL],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.GUARDED_EXFIL],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.HIGH_VALUE_TARGET],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.INTERCEPT],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.UESC_INCURSION],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.UNKNOWN],
     ],
     hiddenActivities: [
-      MAP_ACTIVITY_ITEMS[MapActivityType.GAS_ROOM],
-      MAP_ACTIVITY_ITEMS[MapActivityType.SUPPLY_DROP],
-      MAP_ACTIVITY_ITEMS[MapActivityType.FLARE_ROOM],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.GAS_ROOM],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.SUPPLY_DROP],
+      MAP_ACTIVITY_ITEMS[MapActivitySourceType.FLARE_ROOM],
     ],
   },
   outpost: {

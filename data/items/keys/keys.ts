@@ -13,10 +13,10 @@ export const KEYS: Item[] = [
     ON USE: Removed from inventory Retain room access during run 
    
     + Health and shield consumable usage is slightly faster.`,
-    imageUrl: 'assets/items/keys/north-relay-storage.jpg',
-    usages: [],
-    sources: [],
-    containers: [],
+    images: {
+      icon: 'assets/items/keys/north-relay-storage-64x64.jpg',
+    },
+    sources: {},
     credits: 600,
   },
 ];

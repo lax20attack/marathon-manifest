@@ -1,66 +1,57 @@
-import { Runner } from './runners.interface';
+import { Runner, RunnerStatSlot, RunnerStatType } from './runners.interface';
+
+export const RUNNER_STAT_SLOTS: RunnerStatSlot[] = [
+  {
+    type: RunnerStatType.SelfRepairSpeed,
+    name: 'Self-Repair Speed',
+    description: 'Increases the rate at which you recover health and shields.',
+    image: { icon: 'assets/runners/stats/self-repair-speed.jpg' },
+  },
+  {
+    type: RunnerStatType.Agility,
+    name: 'Agility',
+    description: 'Increases your movement speed and jump height.',
+    image: { icon: 'assets/runners/stats/agility.jpg' },
+  },
+  {
+    type: RunnerStatType.HeatCapacity,
+    name: 'Heat Capacity',
+    description: 'Increases the number of movement actions, such as sprinting or sliding, you can perform before overheating.',
+    image: { icon: 'assets/runners/stats/heat-capacity.jpg' },
+  },
+  {
+    type: RunnerStatType.Hardware,
+    name: 'Hardware',
+    description: `Reduces the duration of status effects applied to you that affect your Runner's physical chassis (Immobilize, Overheat, Toxin).`,
+    image: { icon: 'assets/runners/stats/hardware.jpg' },
+  },
+  {
+    type: RunnerStatType.Firewall,
+    name: 'Firewall',
+    description: `Reduces the duration of status effects applied to you that degrade your Runner's electronic systems (EMP, Hack).`,
+    image: { icon: 'assets/runners/stats/firewall.jpg' },
+  },
+  {
+    type: RunnerStatType.FinisherSiphon,
+    name: 'Finisher Siphon',
+    description: `Increases the amount of shields regained after performing a finisher on a downed Runner.`,
+    image: { icon: 'assets/runners/stats/finisher-siphon.jpg' },
+  },
+  {
+    type: RunnerStatType.LootSpeed,
+    name: 'Loot Speed',
+    description: `Increases how quickly items are revealed when looting containers.`,
+    image: { icon: 'assets/runners/stats/loot-speed.jpg' },
+  },
+  {
+    type: RunnerStatType.ReviveSpeed,
+    name: 'Revive Speed',
+    description: `Increases how quickly you can revive downed allies or use self-revive consumables.`,
+    image: { icon: 'assets/runners/stats/revive-speed.jpg' },
+  },
+];
 
 export const RUNNERS: Runner[] = [
-  {
-    type: 'glitch',
-    imageUrl: 'assets/runners/glitch.png',
-    summary: {
-      kitType: 'Disruptor',
-      occupation: 'Freelance Runner',
-      origin: 'Martian freedom fighter',
-      role: 'Combat anarchist',
-      description: `Break the rhythm. Change the chaos. Own the cycle. Replace the cage. <br/><br/>
-      Amplify. Antagonize. Disrupt. Destroy. Survivordie.`,
-    },
-    abilities: {
-      prime: {
-        name: 'Amplify',
-        description: `Overcharge your <b>movement systems</b>, reducing the heat of buildup of movement abilities. Increases <b>movement speed</b> and <b>weapon dexterity</b>.`,
-      },
-      tactical: {
-        name: 'Disruptor',
-        description: `Press: Transform your arm into a <b>cannon</b> and fire a high-powered energy projectile that deals damage and <b>pushes</b> targets away. <br/><br/>
-        Hold: <b>Overcharge</b> your arm cannon, greatly increasing the size and damage of the blast.`,
-      },
-      trait1: {
-        name: 'Microjets',
-        description: `Activate in air to perform <b>another jump</b> at the cost of <b>generating additional heat</b>.`,
-      },
-      trait2: { name: 'Power Slide', description: 'Grants a <b>supercharged</b> slide that generates additional heat.' },
-    },
-  },
-  {
-    type: 'void',
-    imageUrl: 'assets/runners/void.png',
-    summary: {
-      kitType: 'Stealth',
-      occupation: 'Freelance Runner',
-      origin: 'Unknown',
-      role: 'Shadow assassin',
-      description: `I saw a star fade and the expanse did offer; 'no sympathy, until the last spark shines. <br/><br/>
-      These are my memories; us as blades quest past each synthetic pulse, in search of dreams; of peace.'`,
-    },
-    abilities: {
-      prime: {
-        name: 'Smoke Screen',
-        description: `Throw a smoke disc that emits a <b>line of smoke fields</b> in front of you, disrupting the optics of those who step inside.`,
-      },
-      tactical: {
-        name: 'Active Camo',
-        description: `Activate your shell's camouflage systems, pulling a shroud of <b>invisibility</b> over yourself. <br/><br/>
-        Performing offensive actions, taking damage, and using abilities or consumables briefly <b>disrupts your invisibility</b>.`,
-      },
-      trait1: {
-        name: 'Shadow Dive',
-        description: `Activate while <b>airborne</b> to slam a smoke disc into the ground, deploying a <b>smoke field</b>.`,
-      },
-      trait2: {
-        name: 'Shroud',
-        description: `Your shell automatically activates camouflage systems when entering any <b>smoke field</b>, making you <b>invisible</b>. <br/><br/>
-        Invisibility persists for a short time after leaving the smoke field.`,
-      },
-    },
-  },
   {
     type: 'locus',
     imageUrl: 'assets/runners/locus.png',
@@ -90,6 +81,54 @@ export const RUNNERS: Runner[] = [
         name: 'Tactical Sprint',
         description: `Double-press sprint to move faster at the cost of generating <b>additional heat</b>.`,
       },
+    },
+    stats: {
+      [RunnerStatType.SelfRepairSpeed]: 15,
+      [RunnerStatType.Agility]: 10,
+      [RunnerStatType.HeatCapacity]: 15,
+      [RunnerStatType.Hardware]: 25,
+      [RunnerStatType.Firewall]: 20,
+      [RunnerStatType.FinisherSiphon]: 10,
+      [RunnerStatType.LootSpeed]: 5,
+      [RunnerStatType.ReviveSpeed]: 10,
+    },
+  },
+  {
+    type: 'glitch',
+    imageUrl: 'assets/runners/glitch.png',
+    summary: {
+      kitType: 'Disruptor',
+      occupation: 'Freelance Runner',
+      origin: 'Martian freedom fighter',
+      role: 'Combat anarchist',
+      description: `Break the rhythm. Change the chaos. Own the cycle. Replace the cage. <br/><br/>
+      Amplify. Antagonize. Disrupt. Destroy. Survivordie.`,
+    },
+    abilities: {
+      prime: {
+        name: 'Amplify',
+        description: `Overcharge your <b>movement systems</b>, reducing the heat of buildup of movement abilities. Increases <b>movement speed</b> and <b>weapon dexterity</b>.`,
+      },
+      tactical: {
+        name: 'Disruptor',
+        description: `Press: Transform your arm into a <b>cannon</b> and fire a high-powered energy projectile that deals damage and <b>pushes</b> targets away. <br/><br/>
+        Hold: <b>Overcharge</b> your arm cannon, greatly increasing the size and damage of the blast.`,
+      },
+      trait1: {
+        name: 'Microjets',
+        description: `Activate in air to perform <b>another jump</b> at the cost of <b>generating additional heat</b>.`,
+      },
+      trait2: { name: 'Power Slide', description: 'Grants a <b>supercharged</b> slide that generates additional heat.' },
+    },
+    stats: {
+      [RunnerStatType.SelfRepairSpeed]: 10,
+      [RunnerStatType.Agility]: 30,
+      [RunnerStatType.HeatCapacity]: 25,
+      [RunnerStatType.Hardware]: 10,
+      [RunnerStatType.Firewall]: 5,
+      [RunnerStatType.FinisherSiphon]: 10,
+      [RunnerStatType.LootSpeed]: 10,
+      [RunnerStatType.ReviveSpeed]: 10,
     },
   },
   {
@@ -124,6 +163,58 @@ export const RUNNERS: Runner[] = [
         name: 'Stalker Protocol',
         description: `After breaking a combatant's shields, they leave behind a <b>lingering holographic trail</b> for a short time.`,
       },
+    },
+    stats: {
+      [RunnerStatType.SelfRepairSpeed]: -7,
+      [RunnerStatType.Agility]: -7,
+      [RunnerStatType.HeatCapacity]: -7,
+      [RunnerStatType.Hardware]: -7,
+      [RunnerStatType.Firewall]: -7,
+      [RunnerStatType.FinisherSiphon]: -7,
+      [RunnerStatType.LootSpeed]: -7,
+      [RunnerStatType.ReviveSpeed]: -7,
+    },
+  },
+  {
+    type: 'void',
+    imageUrl: 'assets/runners/void.png',
+    summary: {
+      kitType: 'Stealth',
+      occupation: 'Freelance Runner',
+      origin: 'Unknown',
+      role: 'Shadow assassin',
+      description: `I saw a star fade and the expanse did offer; 'no sympathy, until the last spark shines. <br/><br/>
+      These are my memories; us as blades quest past each synthetic pulse, in search of dreams; of peace.'`,
+    },
+    abilities: {
+      prime: {
+        name: 'Smoke Screen',
+        description: `Throw a smoke disc that emits a <b>line of smoke fields</b> in front of you, disrupting the optics of those who step inside.`,
+      },
+      tactical: {
+        name: 'Active Camo',
+        description: `Activate your shell's camouflage systems, pulling a shroud of <b>invisibility</b> over yourself. <br/><br/>
+        Performing offensive actions, taking damage, and using abilities or consumables briefly <b>disrupts your invisibility</b>.`,
+      },
+      trait1: {
+        name: 'Shadow Dive',
+        description: `Activate while <b>airborne</b> to slam a smoke disc into the ground, deploying a <b>smoke field</b>.`,
+      },
+      trait2: {
+        name: 'Shroud',
+        description: `Your shell automatically activates camouflage systems when entering any <b>smoke field</b>, making you <b>invisible</b>. <br/><br/>
+        Invisibility persists for a short time after leaving the smoke field.`,
+      },
+    },
+    stats: {
+      [RunnerStatType.SelfRepairSpeed]: 10,
+      [RunnerStatType.Agility]: 20,
+      [RunnerStatType.HeatCapacity]: 10,
+      [RunnerStatType.Hardware]: 10,
+      [RunnerStatType.Firewall]: 20,
+      [RunnerStatType.FinisherSiphon]: 10,
+      [RunnerStatType.LootSpeed]: 15,
+      [RunnerStatType.ReviveSpeed]: 15,
     },
   },
 ];
