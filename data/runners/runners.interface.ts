@@ -44,18 +44,23 @@ export interface RunnerAbility {
 // List of stat types for runners. e.g Self-repair speed, agility, etc
 export interface RunnerStatSlot {
   type: RunnerStatType;
-  name: string;
+  key: keyof RunnerStats;
   description: string;
   image: ItemImages;
 }
 
 export interface RunnerStats {
-  [RunnerStatType.SelfRepairSpeed]: number;
-  [RunnerStatType.Agility]: number;
-  [RunnerStatType.HeatCapacity]: number;
-  [RunnerStatType.Hardware]: number;
-  [RunnerStatType.Firewall]: number;
-  [RunnerStatType.FinisherSiphon]: number;
-  [RunnerStatType.LootSpeed]: number;
-  [RunnerStatType.ReviveSpeed]: number;
+  // Visible stats
+  selfRepairSpeed: number;
+  agility: number;
+  heatCapacity: number;
+  hardware: number;
+  firewall: number;
+  finisherSiphon: number;
+  lootSpeed: number;
+  reviveSpeed: number;
+
+  // Hidden stats, not advertised per runner but implants can modify these stats
+  pingDuration?: number;
+  tacticalAbilityRecovery?: number;
 }

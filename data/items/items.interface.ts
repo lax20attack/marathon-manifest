@@ -34,6 +34,7 @@ export enum ItemType {
   Container = 'Container',
   Currency = 'Currency',
   DataCard = 'Data Card',
+  Implant = 'Implant',
   Key = 'Key',
   Material = 'Material',
   Mod = 'Mod',
