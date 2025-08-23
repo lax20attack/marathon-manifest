@@ -32,6 +32,7 @@ export enum ItemType {
   Backpack = 'Backpack',
   Consumable = 'Consumable',
   Container = 'Container',
+  Core = 'Core',
   Currency = 'Currency',
   DataCard = 'Data Card',
   Implant = 'Implant',

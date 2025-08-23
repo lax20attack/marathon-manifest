@@ -1,5 +1,32 @@
 import { ItemRarity, ItemType } from '../items.interface';
-import { Implant, ImplantType } from './implants.interface';
+import { Implant, ImplantSlot, ImplantType } from './implants.interface';
+
+export const IMPLANT_SLOTS: ImplantSlot[] = [
+  {
+    type: ImplantType.Head,
+    images: {
+      icon: 'assets/items/implants/head-slot-72x72.jpg',
+    },
+  },
+  {
+    type: ImplantType.Chest,
+    images: {
+      icon: 'assets/items/implants/chest-slot-72x72.jpg',
+    },
+  },
+  {
+    type: ImplantType.Leg,
+    images: {
+      icon: 'assets/items/implants/leg-slot-72x72.jpg',
+    },
+  },
+  {
+    type: ImplantType.Shield,
+    images: {
+      icon: 'assets/items/implants/shield-slot-72x72.jpg',
+    },
+  },
+];
 
 export const IMPLANTS: Implant[] = [
   {

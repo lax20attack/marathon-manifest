@@ -1,10 +1,10 @@
 import { RunnerStats } from '../../runners/runners.interface';
-import { Item } from '../items.interface';
+import { Item, ItemImages } from '../items.interface';
 
 export enum ImplantType {
   Head = 'Head', // Red icon
   Chest = 'Chest', // Orange icon
-  Legs = 'Legs', // Yellow
+  Leg = 'Leg', // Yellow
   Shield = 'Shield',
 }
 
@@ -20,4 +20,9 @@ export interface Implant extends Item {
 export interface ImplantTrait {
   name: string;
   description: string;
+}
+
+export interface ImplantSlot {
+  type: ImplantType;
+  images: ItemImages;
 }

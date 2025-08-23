@@ -1,4 +1,5 @@
 import { ItemImages } from '../items/items.interface';
+import { RunnerAbilities } from './abilities/abilities.interface';
 
 export type RunnerType = 'locus' | 'glitch' | 'blackbird' | 'void';
 
@@ -29,24 +30,12 @@ export interface RunnerSummary {
   description: string;
 }
 
-export interface RunnerAbilities {
-  prime: RunnerAbility;
-  tactical: RunnerAbility;
-  trait1: RunnerAbility;
-  trait2: RunnerAbility;
-}
-
-export interface RunnerAbility {
-  name: string;
-  description: string;
-}
-
 // List of stat types for runners. e.g Self-repair speed, agility, etc
 export interface RunnerStatSlot {
   type: RunnerStatType;
   key: keyof RunnerStats;
   description: string;
-  image: ItemImages;
+  images: ItemImages;
 }
 
 export interface RunnerStats {

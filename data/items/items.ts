@@ -1,6 +1,7 @@
 import { AMMOS } from './ammo/ammo';
 import { BACKPACKS } from './backpack/backpack';
 import { CONSUMABLES } from './consumable/consumable';
+import { CORES } from './cores/cores';
 import { CURRENCIES } from './currencies/currencies';
 import { IMPLANTS } from './implants/implants';
 import { Item } from './items.interface';
@@ -15,6 +16,7 @@ export const ITEMS: Item[] = [
   ...AMMOS,
   ...BACKPACKS,
   ...CONSUMABLES,
+  ...CORES,
   ...CURRENCIES,
   ...IMPLANTS,
   ...KEYS,
