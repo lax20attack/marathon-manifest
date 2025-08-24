@@ -1,4 +1,4 @@
-import { Runner, RunnerStatSlot, RunnerStatType } from './runners.interface';
+import { Runner, RunnerStatSlot, RunnerStatType, RunnerType } from './runners.interface';
 
 export const RUNNER_STAT_SLOTS: RunnerStatSlot[] = [
   {
@@ -53,8 +53,8 @@ export const RUNNER_STAT_SLOTS: RunnerStatSlot[] = [
 
 export const RUNNERS: Runner[] = [
   {
-    type: 'locus',
-    imageUrl: 'assets/runners/locus.png',
+    type: RunnerType.Locus,
+    imageUrl: 'assets/runners/locus.jpg',
     summary: {
       kitType: 'Destroyer',
       occupation: 'Freelance Runner',
@@ -94,8 +94,8 @@ export const RUNNERS: Runner[] = [
     },
   },
   {
-    type: 'glitch',
-    imageUrl: 'assets/runners/glitch.png',
+    type: RunnerType.Glitch,
+    imageUrl: 'assets/runners/glitch.jpg',
     summary: {
       kitType: 'Disruptor',
       occupation: 'Freelance Runner',
@@ -132,8 +132,8 @@ export const RUNNERS: Runner[] = [
     },
   },
   {
-    type: 'blackbird',
-    imageUrl: 'assets/runners/blackbird.png',
+    type: RunnerType.Blackbird,
+    imageUrl: 'assets/runners/blackbird.jpg',
     summary: {
       kitType: 'Scout',
       occupation: 'Freelance Runner',
@@ -176,8 +176,8 @@ export const RUNNERS: Runner[] = [
     },
   },
   {
-    type: 'void',
-    imageUrl: 'assets/runners/void.png',
+    type: RunnerType.Void,
+    imageUrl: 'assets/runners/void.jpg',
     summary: {
       kitType: 'Stealth',
       occupation: 'Freelance Runner',

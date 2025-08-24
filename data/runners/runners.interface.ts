@@ -1,7 +1,12 @@
 import { ItemImages } from '../items/items.interface';
 import { RunnerAbilities } from './abilities/abilities.interface';
 
-export type RunnerType = 'locus' | 'glitch' | 'blackbird' | 'void';
+export enum RunnerType {
+  Locus = 'Locus',
+  Glitch = 'Glitch',
+  Blackbird = 'Blackbird',
+  Void = 'Void',
+}
 
 export enum RunnerStatType {
   SelfRepairSpeed = 'Self-Repair Speed',
