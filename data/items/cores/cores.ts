@@ -168,4 +168,43 @@ export const CORES: Core[] = [
     sources: null,
     credits: 2500,
   },
+  {
+    id: 12011,
+    slug: 'thermal-sinks',
+    type: ItemType.Core,
+    rarity: ItemRarity.Enhanced,
+    name: 'Thermal Sinks',
+    description: `Sliding in water generates no heat buildup.`,
+    images: {
+      icon: 'assets/items/cores/core-72x72.png',
+    },
+    sources: null,
+    credits: 70,
+  },
+  {
+    id: 12012,
+    slug: 'savior-complex',
+    type: ItemType.Core,
+    rarity: ItemRarity.Enhanced,
+    name: 'Savior Complex',
+    description: `When you are the only remaining crew member alive, your Revive Speed is massively increased.`,
+    images: {
+      icon: 'assets/items/cores/core-72x72.png',
+    },
+    sources: null,
+    credits: 70,
+  },
+  {
+    id: 12013,
+    slug: 'just-flight-actually',
+    type: ItemType.Core,
+    rarity: ItemRarity.Standard,
+    name: 'Just Flight, Actually',
+    description: `While at critical health, your Heat Capacity is increased.`,
+    images: {
+      icon: 'assets/items/cores/core-72x72.png',
+    },
+    sources: null,
+    credits: 35,
+  },
 ];
